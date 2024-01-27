@@ -1,0 +1,367 @@
+{
+  "tiers": {
+    "tier1":{
+      "cookie":{
+        "price": 3,
+        "value": "<:baseCookie:934597522050138123>",
+        "rarity": 50,
+        "max": 10,
+        "name": "cookie",
+        "crafting": {
+          "perCraft": 1,
+          "timePerCraft": 60,
+          "build": {
+            "bits": 1,
+            "<:burntCookie:934597425123962900>": 5
+          },
+          "brew": {
+            "bits": 100,
+            "<:burntCookie:934597425123962900>": 5
+          }
+        }
+      },
+      "burnt": {
+        "price": 1,
+        "rarity": 100,
+        "value": "<:burntCookie:934597425123962900>",
+        "max": 100,
+        "name": "burnt",
+        "crafting": {
+          "perCraft": 1,
+          "timePerCraft": 120,
+          "build": {
+            "bits": 1
+          },
+          "brew": {
+            "bits": 100
+          }
+        }
+      },
+      "heart": {
+        "price": 7,
+        "value": "<:heartCookie:934597425518239805>",
+        "rarity": 25,
+        "max": 5,
+        "name": "heart"
+      },
+      "crumble": {
+        "price": 2,
+        "value": "<:crumblyCookie:934597425107206154>",
+        "rarity": 15,
+        "max": 50,
+        "name": "crumble"
+      },
+      "chest": {
+        "price": 100,
+        "value": "<:chest:934664711436374116>",
+        "rarity": 5,
+        "max": 1,
+        "name": "chest"
+      }
+    },
+    "tier2": {
+      "fortune":{
+        "price": 5,
+        "value": ":fortune_cookie:",
+        "rarity": 50,
+        "max": 10,
+        "name": "fortune"
+      },
+      "double choccy": {
+        "price": 10,
+        "value": "<:doubleChoccy:934597425123975269>",
+        "rarity": 30,
+        "max": 7,
+        "name": "double choccy"
+      },
+      "oatmeal": {
+        "price": 10,
+        "value": "<:oatmealCookie:937882516260540487>",
+        "rarity": 30,
+        "max": 10,
+        "name": "oatmeal"
+      },
+      "gift": {
+        "price": 20,
+        "value": "<:giftCookie:937882648393682994>",
+        "rarity": 10,
+        "max": 2,
+        "name": "gift"
+      },
+      "candy": {
+        "price": 1,
+        "value": ":candy:",
+        "rarity": 7,
+        "max": 200,
+        "name": "candy" 
+      }
+    },
+    "tier3": {
+      "cake": {
+        "price": 15,
+        "value": ":cake:",
+        "rarity": 20,
+        "max": 8,
+        "name": "cake"
+      },
+      "chocolate": {
+        "price": 5,
+        "value": ":chocolate_bar:",
+        "rarity": 100,
+        "max": 16,
+        "name": "chocolate"
+      },
+      "cupcake": {
+        "price": 15,
+        "value": ":cupcake:",
+        "rarity": 45,
+        "max": 12,
+        "name": "cupcake"
+      },
+      "doughnut":{
+        "price": 20,
+        "value": ":doughnut:",
+        "rarity": 25,
+        "max": 12,
+        "name": "doughnut"
+      },
+      "custard": {
+        "price": 100,
+        "value": ":custard:",
+        "rarity": 3,
+        "max": 1,
+        "name": "custard"
+      }
+    },
+    "tier4": {
+      "weed": {
+        "price": 30,
+        "value": "<:theDevil:937884740407672902>",
+        "rarity": 20,
+        "max": 5,
+        "name": "weed"
+      },
+      "brownie": {
+        "price": 20,
+        "value": "<:brownie:937884740302827612>",
+        "rarity": 35,
+        "max": 6,
+        "name": "brownie"
+      },
+      "pot brownie": {
+        "price": 50,
+        "value": "<:specialBrownie:937884740617388093>",
+        "rarity": 5,
+        "max": 3,
+        "name": "pot brownie"
+      },
+      "smoothie": {
+        "price": 40,
+        "value": "<:cookieDrink:938202025672474694>",
+        "rarity": 10,
+        "max": 2,
+        "name": "smoothie"
+      },
+      "cookie sandwich": {
+        "price": 35,
+        "value": "<:cookieSandwich:938572546972991559>",
+        "rarity": 15,
+        "max": 1,
+        "name": "cookie sandwich"
+      }
+    },
+    "tier5": {
+      "golden":{
+        "price": 50,
+        "value": "<:goldenCookie:939266724577046568>",
+        "rarity": 5,
+        "max": 1,
+        "name": "golden"
+      },
+      "rainbow": {
+        "price": 25,
+        "value": "<:rainbowCookie:939266724547686410>",
+        "rarity": 5,
+        "max": 2,
+        "name": "rainbow"
+      },
+      "cat": {
+        "price": 20,
+        "value": "<:cookieCat:939266724224704554>",
+        "rarity": 7,
+        "max": 2,
+        "name": "cat"
+      },
+      "galaxy":{
+        "price": 30,
+        "rarity": 4,
+        "max": 1,
+        "value": "<:galaxyCookie:939266724656742470>",
+        "name": "galaxy"
+      },
+      "human": {
+        "price": 100,
+        "value": "<:literalHuman:939266724467998771>",
+        "rarity": 1,
+        "max": 1,
+        "name": "human"
+      }
+    },
+    "tier6": {
+      "necronomicon": {
+        "price": 100,
+        "value": "<:necronomicon0:939272287499210812>",
+        "rarity": 1,
+        "max": 1,
+        "name": "necronomicon"
+      },
+      "god": {
+        "price": 150,
+        "value": "<:god:939270852279664760>",
+        "rarity": 1,
+        "max": 1,
+        "name": "god"
+      },
+      "zombie flesh":{
+        "price": 2,
+        "rarity": 90,
+        "max": 5,
+        "value": "<:zombieFlesh:939270852015427684>",
+        "name": "zombie flesh"
+      },
+      "lofi girl": {
+        "price": 200,
+        "rarity": 1,
+        "max": 1,
+        "value": "<:lofiGirl:939270852069961729>",
+        "name": "lofi girl"
+      },
+      "blueberry": {
+        "price": 50,
+        "rarity": 10,
+        "max": 5,
+        "value": "<:blueberry:939270968063455242>",
+        "name": "blueberry"
+      }
+    },
+    "tier7": {
+      "shortbread": {
+        "price": 50,
+        "rarity": 20,
+        "max": 3,
+        "value": "<:shortbread:957819319436345394>",
+        "name": "shortbread"
+      },
+      "black and white": {
+        "price": 15,
+        "rarity": 50,
+        "max": 2,
+        "value": "<:blackAndWhite:957819319247597568>",
+        "name": "black and white"
+      },
+      "pinwheel": {
+        "price": 10,
+        "rarity": 75,
+        "max": 4,
+        "value": "<:pinwheel:957819319662833774>",
+        "name": "pinwheel"
+      },
+      "macaron": {
+        "price": 75,
+        "rarity": 40,
+        "value": "<:macaron:957819319847362600>",
+        "max": 5,
+        "name": "macaron"
+      },
+      "flour": {
+        "price": 0,
+        "value": "<:flour:945767684509945947>",
+        "rarity": 0,
+        "max": 1,
+        "name": "flour"
+      },
+      "sugar": {
+        "price": 0,
+        "value": "<:sugar:945767685759848489>",
+        "rarity": 0,
+        "max": 1,
+        "name": "sugar"
+      }
+    },
+    "tier8": {
+      "declaration of independence": {
+        "price": 100,
+        "rarity": 20,
+        "max": 1,
+        "value": "<:declartion:957822759726116884>",
+        "name": "declaration of independence"
+      },
+      "obama": {
+        "price": 99,
+        "rarity": 19,
+        "max": 1,
+        "value": "<:obama:957821786806976572>",
+        "name": "obama"
+      },
+      "literally america": {
+        "price": 200,
+        "rarity": 10,
+        "max": 1,
+        "value": "<:america:957823099338891355>",
+        "name": "literally america"
+      },
+      "love": {
+        "price": 0,
+        "rarity": 0,
+        "max": 0,
+        "name": "love",
+        "value": ":heart:"
+      },
+      "flask": {
+        "price": 0,
+        "rarity": 0,
+        "max": 0,
+        "name": "flask",
+        "value": "<:flask:945767685688537089>"
+      }
+    },
+    "tier9": {
+      "classified": {
+        "price": 150,
+        "rarity": 10,
+        "max": 1,
+        "name": "classified",
+        "value": "<:classified:957826055106875482>"
+      },
+      "the creator": {
+        "price": 200,
+        "rarity": 15,
+        "max": 1,
+        "name": "the creator",
+        "value": "<:theCreator:957825858922487859>"
+      },
+      "crusty sock": {
+        "price": 300,
+        "rarity": 0,
+        "max": 2,
+        "name": "crusty sock",
+        "value": "<:curstySock:957825741742026792>"
+      },
+      "soul": {
+        "price": 0,
+        "rarity": 0,
+        "max": 0,
+        "name": "soul",
+        "value": ":ghost:"
+      },
+
+      "blood": {
+        "price": 0,
+        "rarity": 0,
+        "max": 0,
+        "name": "blood",
+        "value": ":drop_of_blood:"
+      }
+    }
+  }
+}

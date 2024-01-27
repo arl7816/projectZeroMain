@@ -1,0 +1,113 @@
+{
+	"users": {
+		"241330853496619009": {
+			"time": {
+				"fishing_line": {
+					"startTime": 1644517708.311
+				},
+				"boost": {
+					"startTime": 1644344299.3
+				},
+				"passive_runner": {
+					"startTime": 1644428912.661
+				},
+				"keen_eye": {
+					"startTime": 1648660735.347
+				}
+			},
+			"item": {
+				"gift": {
+					"total": 0
+				},
+				"hard_worker": {
+					"total": -3
+				}
+			},
+			"perm": {
+				"something": {
+					"active": true
+				},
+				"randomizer": {
+					"active": true
+				},
+				"embed": {
+					"active": true
+				},
+				"golden_oven": {
+					"active": true
+				},
+				"brewing_station": {
+					"active": true
+				}
+			},
+			"firewall": 3
+		},
+		"192397064930459648": {
+			"time": {
+				"boost": {
+					"startTime": 1644511709.684
+				},
+				"foresight": {
+					"startTime": 1652723876.052
+				},
+				"keen_eye": {
+					"startTime": 1651745896.889
+				}
+			},
+			"item": {},
+			"perm": {
+				"brewing_station": {
+					"active": true
+				},
+				"golden_oven": {
+					"active": true
+				}
+			},
+			"firewall": 3
+		},
+		"276731173865259009": {
+			"time": {},
+			"item": {},
+			"perm": {}
+		},
+		"562738573283950612": {
+			"time": {},
+			"item": {},
+			"perm": {}
+		},
+		"263435864468619265": {
+			"time": {},
+			"item": {},
+			"perm": {}
+		},
+		"895365050439725066": {
+			"time": {},
+			"item": {},
+			"perm": {}
+		},
+		"679160456467709982": {
+			"time": {},
+			"item": {},
+			"perm": {},
+			"firewall": 0
+		},
+		"216298664400912387": {
+			"time": {},
+			"item": {},
+			"perm": {},
+			"firewall": 0
+		},
+		"269602132326481921": {
+			"time": {},
+			"item": {},
+			"perm": {},
+			"firewall": 0
+		},
+		"375749341492805642": {
+			"time": {},
+			"item": {},
+			"perm": {},
+			"firewall": 0
+		}
+	}
+}

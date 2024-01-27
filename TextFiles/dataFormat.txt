@@ -1,0 +1,91 @@
+! = see below for info
+[] = this can repeat forever
+? = doing an update, maybe, possibly
+
+data = {
+  stats: {
+    general: {
+
+    },
+
+    personal{
+      [id]: {
+        messages: !,
+        pinged: !,
+        commands: !
+      }
+    }
+
+  },
+  encom: {
+    
+  }
+}
+
+custom = {
+  [id]: {
+    [command]: "output"
+  }
+}
+
+zeros = {
+  [id]: # (total)
+}
+
+!messages: {
+  total: #,
+  servers: {
+    top: [ (fixed length)
+      {
+        id: "id",
+        total: #
+      }
+    ],
+    [id]: {
+      total: #,
+      channels: {
+        top: [ (fixed length)
+          {
+            id: "id",
+            total: #
+          }
+        ],
+        [id]:{total: #}
+      }
+    }
+  }
+  topChannels: [ (fixed length)
+    {
+      id: "id",
+      total: #,
+      serverId: "id"
+    }
+  ]
+}
+
+!pinged{
+  top: "id",
+  total: #
+  [id]: # (total)
+}
+
+!commands{
+  topCommands: [ // fixed length
+    {
+      id: "command name",
+      total: #
+    }
+  ],
+  topTypes: [ // fixed length
+    {
+      id: "type",
+      total: #
+    }
+  ],
+
+  types: {
+    [type]: # (total)
+  },
+
+  [command]: # (total)
+}

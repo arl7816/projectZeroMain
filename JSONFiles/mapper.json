@@ -1,0 +1,13 @@
+{
+    "botTotalBits": "o->data->stats->global->bot->bits->botTotalBits: int",
+    "botTotalSpent": "o->data->stats->global->bot->bits->botTotalSpent: int",
+    "botVersion": "o->data->stats->global->bot->version: str",
+    "botLevel": "o->data->stats->global->bot->botLevel: int",
+    "botXP": "o->data->stats->global->bot->botXP: int",
+    "botXPneeded": "o->data->stats->global->bot->botXPneeded: int",
+
+    "serverTotalUsers": "o->data->stats->global->servers->serverTotalUsers",
+    "channelLevel": "o->data->stats->global->servers->*serverId: int->channels->*channelId: int->channelLevel: int",
+    "channelXP": "o->data->stats->global->servers->*serverId: int->channels->*channelId: int->channelXP: int",
+    "channelXPneeded": "o->data->stats->global->servers->*serverId: int->channels->*channelId: int->channelXPneeded: int"
+}

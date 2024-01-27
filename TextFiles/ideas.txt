@@ -1,0 +1,53 @@
+Make it so item names can be capitals
+
+MrRayGun: make sure to make the backpack embed based
+
+MrRayGun: change the custom section of the data to use defaultEcon instead of data for value
+
+ThatOneDoge: give custom image shit
+
+MrRayGun: add the ability to use number pick for the '0buy' command
+
+MrRayGun: make it so you cant repeat a wardrobe by checking the persons 'selfs' (might not be possible)
+
+MrRayGun: You should have the ability to replace and delete wardrobes
+
+MrRayGun: make it so you earn some bits for baking cookies and ads increases the amount
+
+MrRayGun: users should be able to just type in the name without the catagory
+
+MrRayGun: you only earn the full bonus if you sell everything one at a time, fix that
+
+MrRayGun: there should be the ability to do all bakes in one go
+
+MrRayGun: make it so custom command names are always lower case
+
+ThatOneDoge: make passive cookie income
+
+MrRayGun: add a preview command
+
+ThatOneDoge: make it possible to see all catalogs with 0catalog
+
+ThatOneDoge: 0 sell all is a scam and takes all my bakes. hurted my business
+
+MrRayGun: add a bits command, thats shows your bits, your bits spent, and your total acculated bits
+
+MrRayGun: add a streak for dailys
+
+ThatOneDoge: let check backpack of other people
+
+ThatOneDoge: add an open all
+
+ThatOneDoge: make a section that adds everything up or just add the chests
+
+MrRayGun: add a role command, a flip, command, and a balance command to get your bits
+
+MrRayGun: change the 0stats_command name
+
+ThatOneDoge: still waiting on that bits command
+
+MrRayGun: add some organization to this all
+
+MrRayGun: organize shit like the store and thumbnail
+
+MrRayGun: give ability to looking into other people's stocks

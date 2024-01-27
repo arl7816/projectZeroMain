@@ -1,0 +1,947 @@
+{
+	"shops": {
+		"241330853496619009": {
+			"ingredients": {
+				"price": 10100,
+				"level": 9
+			},
+			"oven": {
+				"price": 10100,
+				"level": 5
+			},
+			"ads": {
+				"price": 10100,
+				"level": 5
+			},
+			"shop": {
+				"price": 100100,
+				"level": 6
+			},
+			"magic": {
+				"price": 200,
+				"level": 5
+			},
+			"workers": {
+				"price": 1100,
+				"level": 6
+			},
+			"morning bagel": {
+				"price": 200,
+				"level": 4
+			},
+			"grandma's knowledge": {
+				"price": 200,
+				"level": 4
+			},
+			"smile": {
+				"price": 200,
+				"level": 4
+			},
+			"cooks": {
+				"totalCooks": 0,
+				"lastReset": 1694489672.786,
+				"<:burntCookie:934597425123962900>": 110995,
+				"<:chest:934664711436374116>": 1267,
+				"<:baseCookie:934597522050138123>": 23621,
+				":fortune_cookie:": 23588,
+				"<:heartCookie:934597425518239805>": 6917,
+				"<:crumblyCookie:934597425107206154>": 3635,
+				"<:doubleChoccy:934597425123975269>": 9081,
+				"<:oatmealCookie:937882516260540487>": 8996,
+				":candy:": 1746,
+				":cupcake:": 19080,
+				":doughnut:": 6813,
+				"<:brownie:937884740302827612>": 12032,
+				":cake:": 5062,
+				":chocolate_bar:": 110772,
+				"<:theDevil:937884740407672902>": 5069,
+				"<:cookieDrink:938202025672474694>": 2352,
+				"<:giftCookie:937882648393682994>": 2352,
+				"<:cookieSandwich:938572546972991559>": 3551,
+				"<:zombieFlesh:939270852015427684>": 25,
+				"<:necronomicon0:939272287499210812>": 0,
+				"<:cookieCat:939266724224704554>": 1,
+				"<:specialBrownie:937884740617388093>": 1155,
+				":custard:": 841,
+				"<:galaxyCookie:939266724656742470>": 0,
+				"<:blueberry:939270968063455242>": 0,
+				"<:rainbowCookie:939266724547686410>": 0,
+				"<:goldenCookie:939266724577046568>": 0,
+				"<:literalHuman:939266724467998771>": 0,
+				"<:god:939270852279664760>": 0,
+				"<:lofiGirl:939270852069961729>": 0,
+				"brewery": {},
+				"<:flour:945767684509945947>": 37,
+				"<:sugar:945767685759848489>": 32,
+				"<:pinwheel:957819319662833774>": 9,
+				"<:blackAndWhite:957819319247597568>": 8,
+				"<:theCreator:957825858922487859>": 3,
+				"<:macaron:957819319847362600>": 0,
+				"<:shortbread:957819319436345394>": 1,
+				"<:flask:945767685688537089>": 171,
+				":heart:": 68,
+				":ghost:": 32,
+				":drop_of_blood:": 30,
+				"<:obama:957821786806976572>": 2,
+				"<:classified:957826055106875482>": 0,
+				"<:declartion:957822759726116884>": 3,
+				"<:america:957823099338891355>": 0
+			},
+			"dailys": {
+				"lastReset": 1678234674.692
+			},
+			"factory": {
+				"level": 4
+			},
+			"website": {
+				"level": 4
+			},
+			"trucks": {
+				"level": 4
+			},
+			"passive": {
+				"lastCheck": 1694490448.026
+			},
+			"schedule": {
+				"level": 6
+			},
+			"science team": {
+				"level": 1
+			},
+			"investors": {
+				"level": 2
+			},
+			"wisdom": {
+				"level": 2
+			},
+			"research team": {
+				"level": 2
+			},
+			"quality assurance": {
+				"level": 1
+			},
+			"rituals": {
+				"level": 1
+			},
+			"engineering team": {
+				"level": 1
+			}
+		},
+		"192397064930459648": {
+			"ingredients": {
+				"price": 100100,
+				"level": 9
+			},
+			"oven": {
+				"price": 100100,
+				"level": 6
+			},
+			"ads": {
+				"price": 100100,
+				"level": 6
+			},
+			"shop": {
+				"price": 100100,
+				"level": 6
+			},
+			"magic": {
+				"price": 100,
+				"level": 6
+			},
+			"workers": {
+				"price": 100100,
+				"level": 9
+			},
+			"morning bagel": {
+				"price": 100100,
+				"level": 6
+			},
+			"grandma's knowledge": {
+				"price": 10100,
+				"level": 6
+			},
+			"smile": {
+				"price": 100100,
+				"level": 6
+			},
+			"cooks": {
+				"totalCooks": 6,
+				"lastReset": 1706325381.068,
+				"<:burntCookie:934597425123962900>": 290,
+				"<:baseCookie:934597522050138123>": 13,
+				"<:chest:934664711436374116>": 1153,
+				"<:crumblyCookie:934597425107206154>": 0,
+				":fortune_cookie:": 0,
+				"<:heartCookie:934597425518239805>": 0,
+				"<:doubleChoccy:934597425123975269>": 1,
+				":custard:": 0,
+				"<:oatmealCookie:937882516260540487>": 0,
+				":cupcake:": 0,
+				":cake:": 2,
+				":doughnut:": 8,
+				":chocolate_bar:": 17,
+				"<:giftCookie:937882648393682994>": 1,
+				":candy:": 4,
+				"<:brownie:937884740302827612>": 0,
+				"<:specialBrownie:937884740617388093>": 0,
+				"<:theDevil:937884740407672902>": 0,
+				"<:cookieDrink:938202025672474694>": 0,
+				"<:cookieSandwich:938572546972991559>": 0,
+				"<:zombieFlesh:939270852015427684>": 19,
+				"<:cookieCat:939266724224704554>": 1,
+				"<:goldenCookie:939266724577046568>": 0,
+				"<:literalHuman:939266724467998771>": 0,
+				"<:necronomicon0:939272287499210812>": 0,
+				"<:galaxyCookie:939266724656742470>": 0,
+				"<:rainbowCookie:939266724547686410>": 0,
+				"<:god:939270852279664760>": 0,
+				"<:lofiGirl:939270852069961729>": 0,
+				"<:blueberry:939270968063455242>": 0,
+				"brewery": {},
+				"<:pinwheel:957819319662833774>": 1,
+				"<:macaron:957819319847362600>": 2,
+				"<:shortbread:957819319436345394>": 0,
+				"<:blackAndWhite:957819319247597568>": 1,
+				"<:declartion:957822759726116884>": 0,
+				"<:america:957823099338891355>": 0,
+				"<:obama:957821786806976572>": 1,
+				"<:theCreator:957825858922487859>": 0,
+				"<:flour:945767684509945947>": 185,
+				":drop_of_blood:": 180,
+				"<:classified:957826055106875482>": 0,
+				":heart:": 3405,
+				"<:flask:945767685688537089>": 2251,
+				"<:sugar:945767685759848489>": 160,
+				":ghost:": 159,
+				"<:curstySock:957825741742026792>": 0
+			},
+			"dailys": {
+				"lastReset": 1694489835.044
+			},
+			"factory": {
+				"level": 6
+			},
+			"website": {
+				"level": 6
+			},
+			"trucks": {
+				"level": 6
+			},
+			"passive": {
+				"lastCheck": 1694489686.798
+			},
+			"schedule": {
+				"level": 6
+			},
+			"science team": {
+				"level": 1
+			},
+			"investors": {
+				"level": 6
+			},
+			"wisdom": {
+				"level": 6
+			},
+			"research team": {
+				"level": 6
+			},
+			"quality assurance": {
+				"level": 4
+			},
+			"rituals": {
+				"level": 1
+			},
+			"engineering team": {
+				"level": 1
+			}
+		},
+		"316680095458918421": {
+			"ingredients": {
+				"price": 100,
+				"level": 1
+			},
+			"oven": {
+				"price": 10100,
+				"level": 4
+			},
+			"ads": {
+				"price": 10100,
+				"level": 4
+			},
+			"shop": {
+				"price": 1100,
+				"level": 3
+			},
+			"magic": {
+				"price": 100,
+				"level": 1
+			},
+			"workers": {
+				"price": 1100,
+				"level": 3
+			},
+			"morning bagel": {
+				"price": 1100,
+				"level": 3
+			},
+			"grandma's knowledge": {
+				"price": 100,
+				"level": 2
+			},
+			"smile": {
+				"price": 100,
+				"level": 1
+			},
+			"cooks": {
+				"totalCooks": 0,
+				"lastReset": 1644293858.243,
+				"<:heartCookie:934597425518239805>": 0,
+				"<:burntCookie:934597425123962900>": 0,
+				"<:chest:934664711436374116>": 8,
+				":fortune_cookie:": 0,
+				"<:baseCookie:934597522050138123>": 0,
+				"<:doubleChoccy:934597425123975269>": 0,
+				"<:crumblyCookie:934597425107206154>": 0,
+				":cupcake:": 0,
+				":doughnut:": 0,
+				":cake:": 0,
+				"<:oatmealCookie:937882516260540487>": 0,
+				":chocolate_bar:": 0,
+				":custard:": 0,
+				"<:brownie:937884740302827612>": 0,
+				"<:specialBrownie:937884740617388093>": 0,
+				"<:zombieFlesh:939270852015427684>": 0,
+				"<:goldenCookie:939266724577046568>": 0,
+				":candy:": 0
+			},
+			"dailys": {
+				"lastReset": 1644283783.783
+			},
+			"factory": {
+				"level": 1
+			},
+			"website": {
+				"level": 0
+			},
+			"trucks": {
+				"level": 1
+			},
+			"passive": {
+				"lastCheck": 1644029295.034
+			}
+		},
+		"276731173865259009": {
+			"ingredients": {
+				"price": 100100,
+				"level": 6
+			},
+			"oven": {
+				"price": 100100,
+				"level": 6
+			},
+			"ads": {
+				"price": 10100,
+				"level": 6
+			},
+			"shop": {
+				"price": 10100,
+				"level": 6
+			},
+			"magic": {
+				"price": 10100,
+				"level": 4
+			},
+			"workers": {
+				"price": 10100,
+				"level": 6
+			},
+			"morning bagel": {
+				"price": 10100,
+				"level": 6
+			},
+			"grandma's knowledge": {
+				"price": 10100,
+				"level": 5
+			},
+			"smile": {
+				"price": 10100,
+				"level": 4
+			},
+			"cooks": {
+				"totalCooks": 0,
+				"lastReset": 1648138092.302,
+				"<:burntCookie:934597425123962900>": 4127,
+				"<:crumblyCookie:934597425107206154>": 137,
+				"<:baseCookie:934597522050138123>": 831,
+				"<:chest:934664711436374116>": 119,
+				"<:heartCookie:934597425518239805>": 238,
+				"<:doubleChoccy:934597425123975269>": 338,
+				":fortune_cookie:": 775,
+				":cake:": 156,
+				":doughnut:": 210,
+				":candy:": 63,
+				"<:oatmealCookie:937882516260540487>": 315,
+				":chocolate_bar:": 3957,
+				":cupcake:": 651,
+				"<:brownie:937884740302827612>": 421,
+				"<:giftCookie:937882648393682994>": 78,
+				"<:theDevil:937884740407672902>": 165,
+				"<:specialBrownie:937884740617388093>": 46,
+				":custard:": 31,
+				"<:cookieDrink:938202025672474694>": 77,
+				"<:cookieSandwich:938572546972991559>": 124,
+				"<:zombieFlesh:939270852015427684>": 14,
+				"<:literalHuman:939266724467998771>": 0,
+				"<:cookieCat:939266724224704554>": 0,
+				"<:galaxyCookie:939266724656742470>": 0,
+				"<:necronomicon0:939272287499210812>": 0,
+				"<:goldenCookie:939266724577046568>": 0,
+				"<:rainbowCookie:939266724547686410>": 0,
+				"<:blueberry:939270968063455242>": 0,
+				"<:lofiGirl:939270852069961729>": 0,
+				"<:god:939270852279664760>": 0
+			},
+			"dailys": {
+				"lastReset": 1648138094.107
+			},
+			"factory": {
+				"level": 4
+			},
+			"website": {
+				"level": 4
+			},
+			"trucks": {
+				"level": 4
+			},
+			"passive": {
+				"lastCheck": 1648139964.472
+			},
+			"schedule": {
+				"level": 3
+			}
+		},
+		"263435864468619265": {
+			"ingredients": {
+				"price": 100,
+				"level": 1
+			},
+			"oven": {
+				"price": 100,
+				"level": 1
+			},
+			"ads": {
+				"price": 100,
+				"level": 1
+			},
+			"shop": {
+				"price": 100,
+				"level": 1
+			},
+			"magic": {
+				"price": 100,
+				"level": 1
+			},
+			"workers": {
+				"price": 100,
+				"level": 1
+			},
+			"morning bagel": {
+				"price": 100,
+				"level": 2
+			},
+			"grandma's knowledge": {
+				"price": 100,
+				"level": 1
+			},
+			"smile": {
+				"price": 100,
+				"level": 1
+			},
+			"cooks": {
+				"totalCooks": 0,
+				"lastReset": 1645724688.49,
+				"<:burntCookie:934597425123962900>": 158,
+				"<:chest:934664711436374116>": 0,
+				":chocolate_bar:": 10,
+				":cupcake:": 0,
+				"<:baseCookie:934597522050138123>": 13,
+				"<:theDevil:937884740407672902>": 0,
+				":fortune_cookie:": 4,
+				"<:cookieSandwich:938572546972991559>": 1,
+				"<:crumblyCookie:934597425107206154>": 5
+			},
+			"factory": {
+				"level": 1
+			},
+			"website": {
+				"level": 1
+			},
+			"trucks": {
+				"level": 1
+			},
+			"passive": {
+				"lastCheck": 1644283741.164
+			},
+			"dailys": {
+				"lastReset": 1645724707.316
+			},
+			"schedule": {
+				"level": 1
+			}
+		},
+		"375749341492805642": {
+			"ingredients": {
+				"price": 100,
+				"level": 1
+			},
+			"oven": {
+				"price": 100,
+				"level": 1
+			},
+			"ads": {
+				"price": 100,
+				"level": 1
+			},
+			"shop": {
+				"price": 100,
+				"level": 1
+			},
+			"magic": {
+				"price": 100,
+				"level": 1
+			},
+			"workers": {
+				"price": 100,
+				"level": 1
+			},
+			"morning bagel": {
+				"price": 100,
+				"level": 1
+			},
+			"grandma's knowledge": {
+				"price": 100,
+				"level": 1
+			},
+			"smile": {
+				"price": 100,
+				"level": 1
+			},
+			"cooks": {
+				"totalCooks": 0,
+				"lastReset": 1654137265.46,
+				"<:burntCookie:934597425123962900>": 3,
+				"brewery": {},
+				"<:chest:934664711436374116>": 1
+			},
+			"factory": {
+				"level": 1
+			},
+			"website": {
+				"level": 0
+			},
+			"trucks": {
+				"level": 1
+			},
+			"passive": {
+				"lastCheck": 1644366514.631
+			},
+			"schedule": {
+				"level": 1
+			},
+			"science team": {
+				"level": 1
+			},
+			"investors": {
+				"level": 1
+			},
+			"wisdom": {
+				"level": 0
+			},
+			"research team": {
+				"level": 1
+			},
+			"quality assurance": {
+				"level": 1
+			},
+			"rituals": {
+				"level": 1
+			},
+			"engineering team": {
+				"level": 1
+			}
+		},
+		"562738573283950612": {
+			"ingredients": {
+				"price": 100,
+				"level": 1
+			},
+			"oven": {
+				"price": 100,
+				"level": 1
+			},
+			"ads": {
+				"price": 100,
+				"level": 1
+			},
+			"shop": {
+				"price": 100,
+				"level": 1
+			},
+			"magic": {
+				"price": 100,
+				"level": 1
+			},
+			"workers": {
+				"price": 100,
+				"level": 1
+			},
+			"morning bagel": {
+				"price": 100,
+				"level": 1
+			},
+			"grandma's knowledge": {
+				"price": 100,
+				"level": 1
+			},
+			"smile": {
+				"price": 100,
+				"level": 1
+			},
+			"cooks": {
+				"totalCooks": 0,
+				"lastReset": 1644949265.307,
+				"<:burntCookie:934597425123962900>": 0
+			},
+			"factory": {
+				"level": 1
+			},
+			"website": {
+				"level": 0
+			},
+			"trucks": {
+				"level": 1
+			},
+			"passive": {
+				"lastCheck": 1644944991.437
+			}
+		},
+		"895365050439725066": {
+			"ingredients": {
+				"price": 100,
+				"level": 1
+			},
+			"oven": {
+				"price": 100,
+				"level": 1
+			},
+			"ads": {
+				"price": 100,
+				"level": 1
+			},
+			"shop": {
+				"price": 100,
+				"level": 1
+			},
+			"magic": {
+				"price": 100,
+				"level": 1
+			},
+			"workers": {
+				"price": 100,
+				"level": 1
+			},
+			"morning bagel": {
+				"price": 100,
+				"level": 1
+			},
+			"grandma's knowledge": {
+				"price": 100,
+				"level": 1
+			},
+			"smile": {
+				"price": 100,
+				"level": 1
+			},
+			"schedule": {
+				"price": 100,
+				"level": 0
+			},
+			"cooks": {
+				"totalCooks": 0,
+				"lastReset": 1646926326.99,
+				"<:burntCookie:934597425123962900>": 0,
+				"<:chest:934664711436374116>": 0,
+				":chocolate_bar:": 0,
+				"<:zombieFlesh:939270852015427684>": 0,
+				"<:brownie:937884740302827612>": 0,
+				":fortune_cookie:": 0
+			},
+			"factory": {
+				"level": 1
+			},
+			"website": {
+				"level": 0
+			},
+			"trucks": {
+				"level": 1
+			},
+			"passive": {
+				"lastCheck": 1646926326.986
+			},
+			"dailys": {
+				"lastReset": 1646926345.646
+			}
+		},
+		"679160456467709982": {
+			"ingredients": {
+				"price": 100,
+				"level": 1
+			},
+			"oven": {
+				"price": 100,
+				"level": 1
+			},
+			"ads": {
+				"price": 100,
+				"level": 1
+			},
+			"shop": {
+				"price": 100,
+				"level": 1
+			},
+			"magic": {
+				"price": 100,
+				"level": 1
+			},
+			"workers": {
+				"price": 100,
+				"level": 1
+			},
+			"morning bagel": {
+				"price": 100,
+				"level": 1
+			},
+			"grandma's knowledge": {
+				"price": 100,
+				"level": 1
+			},
+			"smile": {
+				"price": 100,
+				"level": 1
+			},
+			"cooks": {
+				"brewery": {},
+				"totalCooks": 0,
+				"lastReset": 1649093888.204,
+				"<:baseCookie:934597522050138123>": 0,
+				"<:chest:934664711436374116>": 0,
+				"<:burntCookie:934597425123962900>": 0,
+				":doughnut:": 0,
+				":cupcake:": 0,
+				"<:zombieFlesh:939270852015427684>": 0,
+				":chocolate_bar:": 0,
+				"<:cookieDrink:938202025672474694>": 0,
+				"<:brownie:937884740302827612>": 0
+			},
+			"schedule": {
+				"level": 1
+			},
+			"science team": {
+				"level": 1
+			},
+			"factory": {
+				"level": 1
+			},
+			"website": {
+				"level": 1
+			},
+			"trucks": {
+				"level": 2
+			},
+			"investors": {
+				"level": 1
+			},
+			"wisdom": {
+				"level": 0
+			},
+			"research team": {
+				"level": 1
+			},
+			"quality assurance": {
+				"level": 1
+			},
+			"rituals": {
+				"level": 1
+			},
+			"engineering team": {
+				"level": 1
+			},
+			"passive": {
+				"lastCheck": 1649093888.161
+			},
+			"dailys": {
+				"lastReset": 1649093915.877
+			}
+		},
+		"216298664400912387": {
+			"ingredients": {
+				"price": 100,
+				"level": 1
+			},
+			"oven": {
+				"price": 100,
+				"level": 1
+			},
+			"ads": {
+				"price": 100,
+				"level": 1
+			},
+			"shop": {
+				"price": 100,
+				"level": 1
+			},
+			"magic": {
+				"price": 100,
+				"level": 1
+			},
+			"workers": {
+				"price": 100,
+				"level": 1
+			},
+			"morning bagel": {
+				"price": 100,
+				"level": 1
+			},
+			"grandma's knowledge": {
+				"price": 100,
+				"level": 1
+			},
+			"smile": {
+				"price": 100,
+				"level": 1
+			},
+			"cooks": {
+				"brewery": {},
+				"totalCooks": 0,
+				"lastReset": 1649094663.61,
+				"<:heartCookie:934597425518239805>": 0
+			},
+			"schedule": {
+				"level": 1
+			},
+			"science team": {
+				"level": 1
+			},
+			"factory": {
+				"level": 1
+			},
+			"website": {
+				"level": 0
+			},
+			"trucks": {
+				"level": 1
+			},
+			"investors": {
+				"level": 1
+			},
+			"wisdom": {
+				"level": 0
+			},
+			"research team": {
+				"level": 1
+			},
+			"quality assurance": {
+				"level": 1
+			},
+			"rituals": {
+				"level": 1
+			},
+			"engineering team": {
+				"level": 1
+			},
+			"passive": {
+				"lastCheck": 1649094663.605
+			}
+		},
+		"269602132326481921": {
+			"ingredients": {
+				"price": 100,
+				"level": 1
+			},
+			"oven": {
+				"price": 100,
+				"level": 1
+			},
+			"ads": {
+				"price": 100,
+				"level": 1
+			},
+			"shop": {
+				"price": 100,
+				"level": 1
+			},
+			"magic": {
+				"price": 100,
+				"level": 1
+			},
+			"workers": {
+				"price": 100,
+				"level": 1
+			},
+			"morning bagel": {
+				"price": 100,
+				"level": 1
+			},
+			"grandma's knowledge": {
+				"price": 100,
+				"level": 1
+			},
+			"smile": {
+				"price": 100,
+				"level": 1
+			},
+			"cooks": {
+				"brewery": {},
+				"totalCooks": 0,
+				"lastReset": 1650564102.318,
+				"<:burntCookie:934597425123962900>": 0
+			},
+			"schedule": {
+				"level": 1
+			},
+			"science team": {
+				"level": 1
+			},
+			"factory": {
+				"level": 1
+			},
+			"website": {
+				"level": 0
+			},
+			"trucks": {
+				"level": 1
+			},
+			"investors": {
+				"level": 1
+			},
+			"wisdom": {
+				"level": 0
+			},
+			"research team": {
+				"level": 1
+			},
+			"quality assurance": {
+				"level": 1
+			},
+			"rituals": {
+				"level": 1
+			},
+			"engineering team": {
+				"level": 1
+			},
+			"passive": {
+				"lastCheck": 1650564102.316
+			}
+		}
+	}
+}

@@ -1,0 +1,136 @@
+{
+	"banks": {
+		"690338432421199892": {
+			"checking": 3,
+			"contributors": {
+				"top": [
+					{
+						"id": "241330853496619009",
+						"total": 25002
+					},
+					{
+						"id": "192397064930459648",
+						"total": -24999
+					}
+				],
+				"241330853496619009": {
+					"withdrawn": 50001,
+					"deposited": 75003
+				},
+				"192397064930459648": {
+					"withdrawn": 25000,
+					"deposited": 1
+				}
+			}
+		},
+		"797331626873847849": {
+			"checking": 0,
+			"contributors": {
+				"top": [
+					{
+						"id": "192397064930459648",
+						"total": 11000
+					},
+					{
+						"id": "241330853496619009",
+						"total": 9001
+					},
+					{
+						"id": "269602132326481921",
+						"total": -20001
+					}
+				],
+				"241330853496619009": {
+					"withdrawn": 203000,
+					"deposited": 212001
+				},
+				"192397064930459648": {
+					"withdrawn": 200000,
+					"deposited": 211000
+				},
+				"269602132326481921": {
+					"withdrawn": 20001,
+					"deposited": 0
+				}
+			}
+		},
+		"883502433416912896": {
+			"checking": 0,
+			"contributors": {
+				"top": []
+			}
+		}
+	},
+	"stocks": {
+		"241330853496619009": {
+			"stock2": null,
+			"stock3": null
+		},
+		"216298664400912387": {
+			"stock1": {
+				"risk": "low-risk",
+				"currentAmount": 10,
+				"original": 10,
+				"lastChecked": 1649094840.797
+			},
+			"stock2": null,
+			"stock3": null
+		},
+		"192397064930459648": {
+			"stock2": null,
+			"stock3": null,
+			"stock1": {
+				"risk": "low-risk",
+				"currentAmount": 1000000,
+				"original": 1000000,
+				"lastChecked": 1694489818.15
+			}
+		},
+		"269602132326481921": {
+			"stock1": {
+				"risk": "high-risk",
+				"currentAmount": 20001,
+				"original": 20001,
+				"lastChecked": 1650563956.285
+			},
+			"stock2": null,
+			"stock3": null
+		}
+	},
+	"stats": {
+		"users": {
+			"top": [
+				{
+					"id": "241330853496619009",
+					"total": 34003
+				},
+				{
+					"id": "192397064930459648",
+					"total": -13999
+				},
+				{
+					"id": "269602132326481921",
+					"total": -20001
+				}
+			],
+			"241330853496619009": {
+				"deposited": 287004,
+				"withdrawn": 253001
+			},
+			"192397064930459648": {
+				"deposited": 211001,
+				"withdrawn": 225000
+			},
+			"269602132326481921": {
+				"deposited": 0,
+				"withdrawn": 20001
+			}
+		},
+		"stocks": {
+			"users": {
+				"top": []
+			},
+			"servers": {}
+		}
+	}
+}

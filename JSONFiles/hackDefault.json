@@ -1,0 +1,100 @@
+{
+  "hacks": {
+    "tier1": {
+      "embed": {
+        "description": "Gives access to 0send command. Will send, a your messages as a embed",
+        "type": "perm",
+        "price": 10000
+      },
+
+      "boost": {
+        "description": "boost xp in general for the next 24 hours",
+        "type": "time",
+        "price": 0,
+        "maxTime": 24000
+      },
+
+      "passive_runner": {
+        "description": "Decreases passive bake time by a half for the next 6 hours",
+        "type": "time",
+        "price":800,
+        "maxTime": 50000
+      },
+
+      "gift": {
+        "description": "Gives others 1500 bits",
+        "type": "item",
+        "price": 1000,
+        "amount": 1
+      },
+
+      "fishing_line": {
+        "description": "increase the amount of bits earned from messages for the next 24 hours",
+        "type": "time",
+        "maxTime": 3600,
+        "price": 1000
+      }
+    },
+    "tier2": {
+      "randomizer" : {
+        "type": "perm",
+        "description": "gives you the ability have your appearance be random. 0randomizer makes your appearnce random. To stop randomness, change your wardrobe, change an attribute or use 0randomizer stop.",
+        "price": 50000
+      },
+      "hard_worker": {
+        "type": "item",
+        "description": "For the next 5 bakes, increases each of your shop stats by one",
+        "price": 36000,
+        "amount": 5
+      },
+      "business_speech" : {
+        "type": "time",
+        "description": "Increases both xp and bits earned for being in voice chat {**coming soon**}",
+        "price": 1000,
+        "maxTime": 3600
+      },
+      "golden_oven": {
+        "description": "gives access to the crafting table",
+        "price": 100000,
+        "type": "perm"
+      },
+      "banking_degree": {
+        "description": "Gives ability to invest into an extra stock {*coming soon*}",
+        "price": 50000,
+        "type": "perm"
+      }
+    },
+    "tier3": {
+      "keen_eye": {
+        "description": "Raises profit during investments",
+        "type": "time",
+        "price": 50000,
+        "maxTime": 3600
+      },
+
+      "firesale": {
+        "description": "decrease the price of every nft by 5% for the next purchase {*coming soon*}",
+        "price": 50000,
+        "type": "item",
+        "amount": 1
+      },
+      
+      "brewing_station": {
+        "price": 250000,
+        "type": "perm",
+        "description": "gives access to the brewing station"
+      },
+      "advanced_degree": {
+        "price": 75000,
+        "type": "perm",
+        "description": "Gives ability to invest into an extra stock {*coming soon*}"
+      },
+      "foresight": {
+        "price": 100000,
+        "type": "time",
+        "description": "increases the chances of making profit during an investment",
+        "maxTime": 3600
+      }
+    }
+  }
+}

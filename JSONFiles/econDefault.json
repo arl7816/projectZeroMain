@@ -1,0 +1,642 @@
+{
+  "custom": {
+    "default": {
+      "color": {
+        "white": "#FFFFFF"
+      },
+      "thumbnail": {
+        "stats": "https://datatron.com/wp-content/uploads/2021/03/Data-Science.png"
+      },
+      "description": {
+        "base": "All of your stats"
+      },
+      "footer": {
+        "base": "Your stats"
+      },
+      "title": {
+        "stats": "Stats"
+      },
+      "author": {
+        "name": "default"
+      },
+      "authorimage": {
+        "name": "https://p.kindpng.com/picc/s/36-365901_nerd-glasses-transparent-background-nerd-glasses-icon-png.png"
+      }
+    },
+    "color": {
+      "red": {
+        "value": "#FF0000",
+        "price": 500,
+        "name": "red"
+      },
+      "blue": {
+        "price": 500,
+        "value": "#0C00FF",
+        "name": "blue"
+      },
+      "green": {
+        "value": "#19CC10",
+        "price": 350,
+        "name": "green"
+      },
+      "yellow": {
+        "value": "#F3F711",
+        "price": 100,
+        "name": "yellow"
+      },
+      "Man behind the slaughter": {
+        "value": "#8806CD",
+        "price": 1000,
+        "name": "Man behind the slaughter"
+      },
+      "orange": {
+        "value": "#FF8000",
+        "price": 200,
+        "name": "orange"
+      },
+      "pink": {
+        "value": "#FF00E0",
+        "price": 100,
+        "pink": "pink"
+      },
+      "black": {
+        "value": "#000000",
+        "price": 50,
+        "name": "black"
+      },
+      "gray": {
+        "value": "#9E9E9E",
+        "price": 25,
+        "name": "white black"
+      },
+      "cyan": {
+        "value": "#00FFF7",
+        "price": 350,
+        "name": "cyan"
+      },
+      "ugliest color": {
+        "value": "#4A412A",
+        "price": 100,
+        "name": "ugliest color"
+      },
+      "Gold": {
+        "value": "#FFD700",
+        "price": 250000,
+        "name": "Gold"
+      },
+      "Pee": {
+        "value": "#8d2b2b",
+        "price": 300000,
+        "name": "Pee"
+      },
+      "Beige": {
+        "value": "#F5F5DC",
+        "price": 45000,
+        "name": "Beige"
+      },
+      "Amaranth": {
+        "value": "#9F2B68",
+        "price": 42903,
+        "name": "Amaranth"
+      },
+      "Glaucous": {
+        "value": "#6082B6",
+        "price": 10662,
+        "name": "Glaucous"
+      },
+      "Phlox": {
+        "value": "#df00ff",
+        "price": 18390,
+        "name": "Phlox"
+      }  
+    },
+    "thumbnail": {
+      "thing": {
+        "price": 100,
+        "value": "https://assets-global.website-files.com/5e78ee1f2f0ca263f9b67c56/5f04a4babe7bb91e10639f9a_ssat-at-home01%402x.png",
+        "name": "test"
+      },
+      "worker": {
+        "price": 500,
+        "value": "https://www.testim.io/wp-content/uploads/2019/11/Testim-What-is-a-Test-Environment_-A-Guide-to-Managing-Your-Testing-A.png",
+        "name": "worker"
+      },
+      "logan": {
+        "price": 1000,
+        "value": "https://cdn.discordapp.com/attachments/690348223352537098/937127416814534716/unknown.png",
+        "name": "logan"
+      },
+      "joker forg": {
+        "price": 1000,
+        "value": "https://cdn.discordapp.com/attachments/900174032446554162/929910941439623209/forg_joker.jpg",
+        "name": "joker forg"
+      },
+      "nate": {
+        "price": 1,
+        "value": "https://cdn.discordapp.com/attachments/900174032446554162/929914284169912330/nateSteal.jpg",
+        "name": "nate"
+      },
+      "cookie": {
+        "price": 2000,
+        "value": "https://blog-en.webroot.com/wp-content/uploads/2019/10/15135014/blog-800x400-pixel-tracking-2.jpg",
+        "name": "cookie"
+      },
+      "useless music": {
+        "price": 5000,
+        "value": "https://cdn.discordapp.com/attachments/900174032446554162/929914284383801345/animeGirlListeningToMusic.jpg",
+        "name": "useless music"
+      },
+      "project zero": {
+        "price": 5000,
+        "value": "https://cdn.discordapp.com/attachments/900174032446554162/929914285851820032/z.jpg",
+        "name": "project zero"
+      },
+      "useless": {
+        "price": 5000,
+        "value": "https://cdn.discordapp.com/attachments/900174032446554162/929914286657110076/gayHitler.jpg",
+        "name": "useless"
+      },
+      "bean": {
+        "price": 2500,
+        "value": "https://cdn.discordapp.com/attachments/900174032446554162/929914285436575744/bean.jpg",
+        "name": "bean"
+      },
+      "vacant": {
+        "price": 500,
+        "value": "https://cdn.discordapp.com/attachments/900174032446554162/929914285650477086/vacant.jpg",
+        "name": "vacant"
+      },
+      "pot of greed": {
+        "price": 9000,
+        "value": "https://cdn.discordapp.com/attachments/900174032446554162/932113672061481000/potOfGreed.jpg",
+        "name": "pot of greed"
+      },
+      "tired": {
+        "price": 200,
+        "value": "https://cdn.discordapp.com/attachments/900174032446554162/929914286250270770/tiredGirl.jpg",
+        "name": "tired"
+      },
+      "anger": {
+        "price": 3000,
+        "value": "https://cdn.discordapp.com/attachments/900174032446554162/929914286447423518/angy.jpg",
+        "name": "anger"
+      },
+      "♫hello world♫": {
+        "price": 4000,
+        "value": "https://cdn.discordapp.com/attachments/900174032446554162/929914286892015696/helloWorld.jpg",
+        "name": "♫hello world♫"
+      },
+      "confidant": {
+        "price": 5000,
+        "value": "https://i.imgur.com/OLWtAsD.jpg",
+        "name": "confidant"
+      },
+      "shittin": {
+        "price": 30000,
+        "value": "https://cdn.discordapp.com/attachments/891702521578545162/930150129716060180/1629559108068s.jpg",
+        "name": "shittin"
+      },
+      "modeus": {
+        "price": 50000,
+        "value": "https://cdn.discordapp.com/attachments/900174032446554162/932114685896036412/a39141864d9ad994abcaa390209523e5.jpg",
+        "name": "modeus"
+      },
+      "man":{
+        "price": 70000,
+        "value": "https://media.discordapp.net/attachments/690348223352537098/949460688143790140/Png.png",
+        "name": "man"
+      },
+      "office woman": {
+        "price": 55000,
+        "value": "http://lsrelay-config-production.s3.amazonaws.com/f77be3cae1add57f1e3e76e0b62938af21616521a0ba591d4e6b7f5550932195/block_screen.html?id=3487cf08-68d1-4274-8790-873455690446",
+        "name": "office woman"
+      },
+      "gangster fish": {
+        "price": 65000,
+        "value": "http://lsrelay-config-production.s3.amazonaws.com/f77be3cae1add57f1e3e76e0b62938af21616521a0ba591d4e6b7f5550932195/block_screen.html?id=c97dbe29-cc55-49d1-9c12-74cfd3ce86e9",
+        "name": "gangster fish"
+      },
+      "bee": {
+        "price": 500000,
+        "value": "https://media.discordapp.net/attachments/900174032446554162/970649219432063046/20220501_225816.jpg",
+        "name": "bee"
+      }  
+    },
+    "description": {
+      "customizable": {
+        "price": 10000,
+        "value": "",
+        "name": "customizable"
+      },
+      "hello": {
+        "price": 100,
+        "value": "Hello World!",
+        "name": "hello"
+      },
+      "cam's phrase": {
+        "price": 5000,
+        "value": "horny nigga laundry basket",
+        "name": "cam's phrase"
+      },
+      "her phrase": {
+        "price": 2500,
+        "value": "floppy penis",
+        "name": "her phrase"
+      },
+      "dom's phrase": {
+        "price": 3001,
+        "value": "nigga poop bandit",
+        "name": "dom's phrase"
+      },
+      "confidant": {
+        "price": 5000,
+        "value": "One of your confidants",
+        "name": "confidant"
+      },
+      "another": {
+        "price": 3874,
+        "value": "another thing",
+        "name": "another"
+      },
+      "mmmmmm honey": {
+        "price": 250000,
+        "value": "it's hip to fuck bees",
+        "name": "it's hip to"
+      }
+    },
+    "author": {
+      "customizable": {
+        "price": 1000000,
+        "value": "",
+        "name": "customizable"
+      },
+      "confidant": {
+        "price": 5000,
+        "value": "Protagonist",
+        "name": "confidant"
+      },
+      "holy": {
+        "price": 100,
+        "value": "God himself",
+        "name": "holy"
+      },
+      "bees": {
+        "price": 100000,
+        "value": "Bee fucker",
+        "name": "bees"
+      }
+    },
+    "title": {
+      "customizable": {
+        "price": 10000,
+        "value": "",
+        "name": "customizable"
+      },
+      "confidant": {
+        "price": 5000,
+        "value": "Confidant",
+        "name": "confidant"
+      },
+      "hello": {
+        "price": 1000,
+        "value": "Hello world",
+        "name": "hello"
+      },
+      "friggin packet": {
+        "price": 3000,
+        "value": "not everyone learns from a friggin packet yo",
+        "name": "friggin packet"
+      }
+    },
+    "authorimage": {
+      "blank": {
+        "price": 1000,
+        "value": "",
+        "name": "blank"
+      },
+      "confidant": {
+        "price": 5000,
+        "value": "https://i.pinimg.com/736x/ef/e4/33/efe433a84409e5166490b814b939a128.jpg",
+        "name": "confidant"
+      }
+    },
+    "footer": {
+      "customizable": {
+        "price": 10000,
+        "value": "",
+        "name": "customizable"
+      },
+      "foot fetish": {
+        "price": 9000,
+        "value": "foot me liko",
+        "name": "foot fetish"
+      },
+      "serious question": {
+        "price": 50000,
+        "value": "do u fart a lot or a little and when u poop what's the velocity of it like is it fast or slow and how often",
+        "name": "serious question"
+      }
+    }
+  },
+  "items": {
+    "common": {
+      "image": {
+        "base": {
+          "price": 1000,
+          "value": "https://datatron.com/wp-content/uploads/2021/03/Data-Science.png",
+          "name": "base",
+          "type": "image"
+        },
+        "bruv": {
+          "price": 500,
+          "value": "https://cdn.discordapp.com/attachments/891702521578545162/925645715189944360/FHaLocUWQAEiZTN.jpg",
+          "type": "image"
+        },
+        "hmm": {
+          "price": 10000,
+          "value": "https://cdn.discordapp.com/attachments/854565594368180234/877053628932845579/unknown.png",
+          "type": "image"
+        }
+      },
+      "emoji": {
+        "base": {
+          "price": 100,
+          "value": ":grinning:",
+          "name": "emoji",
+          "type": "emoji"
+        }
+      },
+      "video": {},
+      "music": {
+        "nates love": {
+          "price": 10000,
+          "value": "MusicFiles/natesLove.mp3",
+          "type": "music"
+        }
+      },
+      "gif": {
+        "fastbear": {
+          "price": 1987,
+          "value": "https://tenor.com/view/fnaf-freddy-fazbear-freddy-fazbear-okbr-gif-21639589",
+          "type": "gif"
+        },
+        "five night": {
+          "price": 20000,
+          "value": "https://tenor.com/view/fnaf-five-nights-at-freddy-jumpscare-meme-gif-22612257",
+          "type": "gif"
+        },
+        "porn": {
+          "price": 10000,
+          "value": "https://tenor.com/view/p4-persona4-kanji-peg-me-gif-20804942",
+          "type": "gif"
+        }
+      }
+    },
+    "farm": {
+      "image": {
+        "moore": {
+          "price": 1000,
+          "value": "https://cdn.discordapp.com/attachments/697226669190021193/825055452118384650/basicallyMrMoore.jpg",
+          "maxCrop": 10,
+          "yieldPerReset": 1,
+          "timeTillReset": 60,
+          "lastReset": 0
+        },
+        "be scared":{
+          "price": 5000,
+          "value": "https://cdn.discordapp.com/attachments/891702521578545162/930150128633913416/IMG_20220106_000735_187.jpg",
+          "maxCrop": 2,
+          "yieldPerReset": 1,
+          "timeTillReset": 3600,
+          "lastReset": 0
+        },
+        "mc-chan": {
+          "price": 10000,
+          "value": "https://media.discordapp.net/attachments/856256056967561286/938175609199267900/Screenshot_20220127-234634.jpg",
+          "maxCrop": 3,
+          "yieldPerReset": 1,
+          "timeTillReset": 43200,
+          "lastReset": 0
+        },
+        "swim": {
+          "price": 20000,
+          "value": "https://media.discordapp.net/attachments/900174032446554162/940955454211776602/IMG_2210.png",
+          "maxCrop": 3,
+          "yieldPerReset": 1,
+          "timeTillReset": 54000,
+          "lastReset": 0
+        }
+      },
+      "emoji": {},
+      "video": {
+        "hampter": {
+          "price": 75000,
+          "value": "https://media.discordapp.net/attachments/900174032446554162/942807661697699860/67777dee6f19ca9d95727b4d959e270980c9373798bd6bcd9996015d85a3ddff_1.mp4",
+          "maxCrop": 1,
+          "yieldPerReset": 1,
+          "timeTillReset": 127999,
+          "lastReset": 0  
+        },
+        "vroom": {
+          "price": 150000,
+          "value": "https://media.discordapp.net/attachments/900174032446554162/947849180431384656/42440f4b8ce4304f0d011af83b5a46e96686ef001df3093c0673e808e1950948_1.mp4",
+          "maxCrop": 3,
+          "yieldPerReset": 1,
+          "timeTillReset": 127999,
+          "lastReset": 0
+        }
+
+      },
+      "music": {},
+      "gif": {
+        "chicken": {
+          "price": 6428,
+          "value": "https://tenor.com/view/fnaf-chica-dancing-animatronics-gif-15980599",
+          "maxCrop": 5,
+          "yieldPerReset": 1,
+          "timeTillReset": 120,
+          "lastReset": 0
+        },
+
+        "horny aligator": {
+          "price": 7000,
+          "value": "https://tenor.com/view/fnaf-fnaf-security-breach-montgomery-gator-monty-gator-security-breach-gif-23592855",
+          "maxCrop": 1,
+          "yieldPerReset": 1,
+          "lastReset": 0,
+          "timeTillReset": 3600
+        },
+
+        "hello": {
+          "price": 8000,
+          "value": "https://tenor.com/view/hello-chat-tricky-hello-meme-tricky-gif-23955810",
+          "maxCrop": 2,
+          "yieldPerReset": 1,
+          "lastReset": 0,
+          "timeTillReset": 7200 
+        },
+
+        "goodbye": {
+          "price": 9000,
+          "value": "https://tenor.com/view/goodbye-chat-goodbye-chat-tricky-tricky-the-clown-gif-22178085",
+          "maxCrop": 2,
+          "yieldPerReset": 1,
+          "lastReset": 0,
+          "timeTillReset": 7200
+        }
+      }
+    },
+    "mythic": {
+      "image": {
+        "idk": {
+          "price": 8000,
+          "value": "https://cdn.discordapp.com/attachments/891702521578545162/930150128868819074/D8VnKxQUYAEq2ci.jpg",
+          "maxPerServer": 3
+        },
+        "nigga poop bandit": {
+          "price": 5,
+          "value": "https://cdn.discordapp.com/attachments/900174032446554162/932114685896036412/a39141864d9ad994abcaa390209523e5.jpg",
+          "maxPerServer": 2
+        },
+        "dont worry": {
+          "price": 5000,
+          "value": "https://cdn.discordapp.com/attachments/891702521578545162/930150129984499722/20210923_171524.jpg",
+          "maxPerServer": 4
+        },
+        "kitten": {
+          "price": 4000,
+          "value": "https://cdn.discordapp.com/attachments/891702521578545162/930150130613616700/20210331_184020.jpg",
+          "maxPerServer": 20
+        },
+        "the bot": {
+          "price": 25000,
+          "value": "https://cdn.discordapp.com/attachments/900174032446554162/958859775846789130/20220330_042315.png",
+          "maxPerServer": 8
+        },
+        "placeholder": {
+          "price": 10000,
+          "value": "https://media.discordapp.net/attachments/690348223352537098/947838603483029574/Screenshot_20220227-230238.jpg",
+          "maxPerServer": 15
+        },
+        "voices": {
+          "price": 75000,
+          "value": "https://cdn.discordapp.com/attachments/918825086679674912/954008498021220362/Screenshot_20220312-181048_Instagram.jpg",
+          "maxPerServer": 10
+        }
+      },
+      "emoji": {},
+      "video": {
+        "shaq": {
+          "price": 1000,
+          "value": "https://cdn.discordapp.com/attachments/891702521578545162/930150130898853939/Shaq_wtf_meme-720p.mp4",
+          "maxPerServer": 5
+        }
+      },
+      "music": {
+      },
+      "gif": {
+        "lore": {
+          "price": 1983,
+          "value": "https://tenor.com/view/fnaf-freddy-five-nights-at-freddy-fanf-fnaf-meme-gif-21751775",
+          "maxPerServer": 1
+        },
+        "maybe boobz": {
+          "price": 10000,
+          "value": "https://cdn.boob.bot/Gifs/1811.gif",
+          "maxPerServer": 3
+        },
+        "goodnight kiss": {
+          "price": 15000,
+          "value": "https://tenor.com/view/hug-love-hi-bye-cat-gif-16191803",
+          "maxPerServer": 10
+        }
+      }
+    },
+    "universal": {
+      "image": {
+        "tester": {
+          "price": 10000,
+          "value": "https://cdn.discordapp.com/attachments/891702521578545162/933421535270678558/IMG_0602.png",
+          "max": 10
+        },
+        "point": {
+          "price": 25000,
+          "value": "https://cdn.discordapp.com/attachments/891702521578545162/925645747880337468/C5D6ECFC-4116-42F8-ADED-6CEFB56C45C4.jpg",
+          "max": 5
+        },
+        "come": {
+          "price": 50000,
+          "value": "https://cdn.discordapp.com/attachments/891702521578545162/930150130345189446/artworks-JEzdy7phrNyJJXTf-2Rqwkw-t500x500.jpg",
+          "max": 10
+        },
+        "explosive": {
+          "price": 100000,
+          "value": "https://cdn.discordapp.com/attachments/900174032446554162/941433467235889213/Screenshot_20220125-151754.jpg",
+          "max": 5
+        },
+        "business": {
+          "price": 1000000,
+          "value": "https://pics.me.me/all-business-20748411.png",
+          "max": 5
+        },
+        "it's hip to": {
+          "price": 2500000,
+          "value": "https://media.discordapp.net/attachments/900174032446554162/970649219432063046/20220501_225816.jpg",
+          "max": 2
+        }
+      },
+      "emoji": {},
+      "video": {
+        "chemistry": {
+          "price": 150000,
+          "value": "https://cdn.discordapp.com/attachments/900174032446554162/941433467638530048/ff33e230d978a8dc29cd3a76067f8b48fa6af0856e7b01fee544543869814ccd_1.mp4",
+          "max": 3
+        },
+        "chargles": {
+          "price": 175000,
+          "value": "https://media.discordapp.net/attachments/900174032446554162/950213939319410718/trim.D9F26CFA-FE22-4362-A2D4-6491313904F7.mov",
+          "max": 4
+        }
+      },
+      "music": {
+        "bumble": {
+          "price": 125000,
+          "value": "MusicFiles/Buck Bumble.mp3",
+          "max": 2,
+          "type": "music"
+        }
+      },
+      "gif": {
+        "literal hentai": {
+          "price": 45000,
+          "value": "https://imgur.com/3nNoSO9",
+          "max": 5
+        }
+      }
+    },
+    "limited": {
+      "image": {},
+      "emoji": {},
+      "video": {},
+      "music": {},
+      "gif": {}
+    },
+
+    "VIP": {
+      "image": {
+        "the gang": {
+          "price": 0,
+          "value": "https://cdn.discordapp.com/attachments/854565594368180234/905263115950759987/unknown.png"
+        },
+        "wise one": {
+          "price": 0,
+          "value": "https://cdn.discordapp.com/attachments/854565594368180234/904766514220118036/PXL_20211029_201222881.jpg"
+        }
+      },
+      "emoji": {},
+      "video": {},
+      "music": {},
+      "gif": {}
+    }
+  }
+}
