@@ -1,3 +1,4 @@
+const DataManager = require('./DataManager');
 const general = require('./general');
 
 module.exports = {
@@ -153,42 +154,49 @@ module.exports = {
     let id = message.author.id;
     let serverId = message.guild.id;
     let channelId = message.channel.id;
-    let data = general.readFile();
+    
+    var dm = new DataManager("JSONFiles/data.json");
 
-    if (data.stats.global.servers[serverId] == null){
-      data.stats.global.servers[serverId] = {channels: {top: []}, level: 1, xp:0, xpNeeded: 100};
-      data.stats.global.servers.total++;
+    // if its a new server, add one, likewise to the array
+    // figure this out buddy boi
 
-      data.stats.global.servers.top = general.newTop(data.stats.global.servers.top, {id: serverId, total: data.stats.global.servers[serverId].level}, null);
+    
+    // ups the xp by for both channel and server
+    dm.set("serverXP", 
+        dm.get("serverXP", [serverId], 0) + 5, 
+    [serverId]);
+    dm.set("channelXP", 
+        dm.get("channelXP", [serverId, channelId], 0) + 5, 
+    [serverId, channelId]);
+
+    // checks if new xp warrants level up for server
+    if (dm.get("serverXPneeded", [serverId], 100) <= dm.get("serverXP", [serverId])){
+        
+        dm.set("serverLevel", 
+            dm.get("serverLevel", [serverId], 0) + 1,
+        [serverId]);
+
+        dm.set("serverXPneeded", 
+            dm.get("serverXPneeded", [serverId]) * 2,
+        [serverId]);
+
+      dm.updateArray("!topChannelsInServer", serverId, "serverLevel", null, [serverId], 0);
     }
 
-    if (data.stats.global.servers[serverId].channels == null){
-      data.stats.global.servers[serverId].channels = {top: []}
-    }    
+    // checks if channels need level up
+    if (dm.get("channelXPneeded", [serverId, channelId], 100) <= dm.get("channelXP", [serverId, channelId])){
 
-    if (data.stats.global.servers[serverId].channels[channelId] == null){
-      data.stats.global.servers[serverId].channels[channelId] = {level: 1, xp:0, xpNeeded: 100};
+        dm.set("channelLevel", 
+            dm.get("channelLevel", [serverId, channelId], 0) + 1,
+        [serverId]);
 
-      data.stats.global.servers[serverId].channels.top = general.newTop(data.stats.global.servers[serverId].channels.top, {id: channelId, total: data.stats.global.servers[serverId].channels[channelId].level}, null);
+        dm.set("channelXPneeded", 
+            dm.get("channelXPneeded", [serverId, channelId]) * 2,
+        [serverId]);
+
+        dm.updateArray("!topChannelsInServer", channelId, "channelLevel", [serverId], [serverId, channelId], 0);
     }
 
-    data.stats.global.servers[serverId].xp += 5;
-    data.stats.global.servers[serverId].channels[channelId].xp += 5;
-
-    if (data.stats.global.servers[serverId].xpNeeded <= data.stats.global.servers[serverId].xp){
-      data.stats.global.servers[serverId].level++;
-      data.stats.global.servers[serverId].xpNeeded *= 2;
-
-      data.stats.global.servers.top = general.newTop(data.stats.global.servers.top, {id: serverId, total: data.stats.global.servers[serverId].level}, null);
-    }
-
-    if (data.stats.global.servers[serverId].channels[channelId].xpNeeded <= data.stats.global.servers[serverId].channels[channelId].xp){
-      data.stats.global.servers[serverId].channels[channelId].level++;
-      data.stats.global.servers[serverId].channels[channelId].xpNeeded *= 2;
-
-      data.stats.global.servers[serverId].channels.top = general.newTop(data.stats.global.servers[serverId].channels.top, {id: channelId, total: data.stats.global.servers[serverId].channels[channelId].level}, null);
-    }
-
-    general.writeFile(data);
+    dm.close();
   },
 }

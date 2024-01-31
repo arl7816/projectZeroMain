@@ -109,5 +109,26 @@
 			"perm": {},
 			"firewall": 0
 		}
+	},
+	"hacks": {
+		"users": {
+			"241330853496619009": {
+				"time": {
+					"boost": {
+						"hacksTimeStartTime": 0
+					},
+					"fishing_line": {
+						"hacksTimeStartTime": 0
+					}
+				}
+			},
+			"192397064930459648": {
+				"time": {
+					"boost": {
+						"hacksTimeStartTime": 0
+					}
+				}
+			}
+		}
 	}
 }

@@ -1,70 +1,49 @@
 const fs = require("fs");
 //const hack = require("./hacks"); // big taboo but like, whos ever going to look at this
 
+const DataManager = require("./DataManager");
+
 module.exports = {
   name: "general",
   description: "",
 
   // increases general stats that are shared among all interactions
   generalIncrease(userId, serverId, xp=1, data=null){
-    var hacks = module.exports.readFile("JSONFiles/hacks.json");
+    //var hacks = module.exports.readFile("JSONFiles/hacks.json");
     var hackDefault = module.exports.readFile("JSONFiles/hackDefault.json");
+    var hacks = new DataManager("JSONFiles/hacks.json", "JSONFiles/mapper.json");
 
-    if (hacks.users[userId] != null && hacks.users[userId]["time"]["boost"]){
-      var deltaTime = Math.abs(new Date().getTime() / 1000 - hacks.users[userId]["time"]["boost"].startTime)
+    if (hacks.checkPath("hacks->users->*userId->time->boost", [userId])){
+      var deltaTime = Math.abs(new Date().getTime() / 1000 - hacks.get("hacksTimeStartTime", [userId, "boost"], 0));
       if (hackDefault.hacks["tier1"]["boost"].maxTime - deltaTime > 0){
         xp *= 2
       }
     }
 
-    if (data == null){
-      data = module.exports.readFile();
+    data.updateArray("!topUsersGlobal", userId, "userLevel", null, [userId], 0);
+
+    data.updateArray("!topUsersInServer", userId, "userLevel", [serverId], [userId], 0);
+
+
+    data.update("userXP", [userId], x => x + (x * data.get("userLevel", [userId], 0) + 1), 0)
+    if (data.get("userXP", [userId], 0) >= data.get("userXPneeded", [userId], 100)){
+        data.update("userXPneeded", [userId], x => x * 2);
+        data.update("userLevel", [userId], x => x + 1);
     }
 
-    if (data.stats.personal[userId] == null){
-      data.stats.personal[userId] = {};
-    }
+    //
 
-    if (data.stats.personal[userId]["level"] == null){
-      data.stats.personal[userId]["level"] = 1;
-      data.stats.personal[userId]["xp"] = 0; // current xp
-      data.stats.personal[userId]["neededXp"] = 100;
-
-      data.stats.global.users.top = module.exports.newTop(data.stats.global.users.top, {id: userId, total: data.stats.personal[userId].level}, 10);
-
-      if (data.stats.global.servers[serverId] == null){data.stats.global.servers[serverId] = {};}
-      if (data.stats.global.servers[serverId].users == null){data.stats.global.servers[serverId].users = {top: []}};
-      
-      //console.log(data.stats.global.servers[serverId])
-
-      data.stats.global.servers[serverId].users.top = module.exports.newTop(data.stats.global.servers[serverId].users.top, {id:userId, total: data.stats.personal[userId].level}, null); 
-    }
-
-    data.stats.personal[userId].xp += (xp * data.stats.personal[userId].level);
-    if (data.stats.personal[userId].xp >= data.stats.personal[userId].neededXp){
-      data.stats.personal[userId].neededXp *= 2;
-      data.stats.personal[userId].level++;
-
-      data.stats.global.users.top = module.exports.newTop(data.stats.global.users.top, {id: userId, total: data.stats.personal[userId].level}, null);
-
-      if (data.stats.global.servers[serverId] == null){data.stats.global.servers[serverId] = {};}
-      if (data.stats.global.servers[serverId].users == null){data.stats.global.servers[serverId].users = {top: []}};
-      data.stats.global.servers[serverId].users.top = module.exports.newTop(data.stats.global.servers[serverId].users.top, {id:userId, total: data.stats.personal[userId].level}, null); 
-    }
-
-    if (data.stats.personal[userId]["zeros"] == null){
-      data.stats.personal[userId]["zeros"] = 0;
-    }
-
-    if (hacks.users[userId] != null && hacks.users[userId]["time"]["fishing_line"]){
-      var deltaTime = Math.abs(new Date().getTime() / 1000 - hacks.users[userId]["time"]["fishing_line"].startTime)
+    if (hacks.checkPath("hacks->users->*userId->time->fishing_line", [userId])){
+      var deltaTime = Math.abs(new Date().getTime() / 1000 - hacks.get("hacksTimeStartTime", [userId, "fishing_line"], 0))
       if (hackDefault.hacks["tier1"]["fishing_line"].maxTime - deltaTime > 0){
-        data.stats.personal[userId]["zeros"] += 5;
+        data.update("userBits", [userId], x => x + 5, 0);
       }
     }
 
-    data.stats.personal[userId]["zeros"]++;
-    data.stats.global.bot.bits.total++;
+    data.update("userBits", [userId], x => x + 1, 0);
+    data.update("botTotalBits", null, x => x + 1, 0);
+
+    hacks.close();
 
     return data;
   },

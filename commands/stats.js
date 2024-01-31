@@ -2,6 +2,8 @@
 const fs = require("fs");
 const general = require("./general");
 
+const DataManager = require("./DataManager");
+
 module.exports = {
   name: "stats",
   description: "keeps track of a persons stats",
@@ -177,81 +179,51 @@ module.exports = {
     let id = message.author.id;
     let serverId = message.guild.id;
     let channelId = message.channel.id;
-    let data = general.readFile();
 
-    // goes through each pinged user and increases the users pinged stats with that person
-    function pinged(data, message){
-      let pingedUsers = message.mentions.users;
-      if (pingedUsers.first() != null){
-        if (data.stats.personal[id].messages["pinged"] == null){
-          let firstPingedId = pingedUsers.first().id
-          data.stats.personal[id].messages.pinged = {top: firstPingedId, total: 0, firstPingedId: 0}
-        }
+    var dm = new DataManager("JSONFiles/data.json");
 
+    // increases general stats
+    dm = general.generalIncrease(message.author.id, serverId, 1, dm);
+
+    // total
+    dm.update("totalUserMessages", [id], x => x + 1, 0);
+
+    // server total
+    dm.update("totalUserServerMessages", [id, serverId], 
+        x => x + 1, 0);
+
+    // channel total
+    dm.update("totalUserChannelMessages", [id, serverId, channelId], 
+        x => x + 1, 0);
+
+    // personal servers based on messages
+    dm.updateArray("!topServerBasedMessages", serverId, "totalUserServerMessages", [id], [id, serverId], 0);
+    
+    // personal channels based on messages within a server
+    dm.updateArray("!topChannelBasedMessages", channelId, "totalUserChannelMessages", [id, serverId], 
+    [id, serverId, channelId], 0);
+
+    // personal channels overall based on messages
+    dm.updateArray("!topChannelOverallMessages", channelId, "totalUserChannelMessages", [id], [
+        id, serverId, channelId], 0);
+
+    //data = pinged(data, message);
+
+    let pingedUsers = message.mentions.users;
+    if (pingedUsers.first() != null){
         pingedUsers.forEach(user => {
           var userId = user.id;
-          data.stats.personal[id].messages.pinged.total++;
+          dm.update("totalPings", [id], x => x + 1, 0);
 
-          if (data.stats.personal[id].messages.pinged[userId] == null){
-            data.stats.personal[id].messages.pinged[userId] = 0
-          }
-          data.stats.personal[id].messages.pinged[userId]++;
+          dm.update("#userTotalPings", [id], x => x + 1, 0, userId);
+          
 
-          if (data.stats.personal[id].messages.pinged[userId] > data.stats.personal[id].messages.pinged[data.stats.personal[id].messages.pinged.top]){
-            data.stats.personal[id].messages.pinged.top = userId;
-          }
+          dm.updateArray("!topPingedUsers", userId, "#userTotalPings", [id], [id], 0, userId);
 
         })
       }
 
-      return data
-    }
 
-    // creates stats key:value items if users are missing them
-    if (data.stats.personal[id] == null){
-      data["stats"]["personal"][id] = {}
-    }
-
-    // increases general stats
-    data = general.generalIncrease(message.author.id, serverId, 1, data);
-
-    // increases totals and reorganizes the top
-    if (data.stats.personal[id]["messages"] == null){
-      data.stats.personal[id]["messages"] = {total: 0, servers: {top: []}}
-    }
-
-    // total
-    data.stats.personal[id]["messages"].total++;
-
-    if (data.stats.personal[id]["messages"].servers[serverId] == null){
-      data.stats.personal[id]["messages"].servers[serverId] = {total: 0, channels: {top: []}}; 
-    }
-
-    // server total
-    data.stats.personal[id]["messages"].servers[serverId].total++;
-
-    if (data.stats.personal[id]["messages"].servers[serverId].channels[channelId] == null){
-      data.stats.personal[id]["messages"].servers[serverId].channels[channelId] = {total: 0}
-    }
-
-    // channel total
-    data.stats.personal[id]["messages"].servers[serverId].channels[channelId].total++;
-
-    // sort server top
-    data.stats.personal[id]["messages"].servers.top = general.newTop(data.stats.personal[id]["messages"].servers.top, {id: serverId, total: data.stats.personal[id]["messages"].servers[serverId].total}, null);
-
-    // sort channel top
-    data.stats.personal[id]["messages"].servers[serverId].channels.top = general.newTop(data.stats.personal[id]["messages"].servers[serverId].channels.top, {id: channelId, total: data.stats.personal[id]["messages"].servers[serverId].channels[channelId].total}, null);
-
-    if (data.stats.personal[id]["messages"].topChannels == null){
-      data.stats.personal[id]["messages"].topChannels = [];
-    }
-
-    // sort global top
-    data.stats.personal[id]["messages"].topChannels = general.newTop(data.stats.personal[id]["messages"].topChannels, {id: channelId, total: data.stats.personal[id]["messages"].servers[serverId].channels[channelId].total, serverId: serverId}, null);
-
-    data = pinged(data, message);
-
-    general.writeFile(data)
+    dm.close();
   },
 }

@@ -54,7 +54,10 @@ client.on('message', message => {
     1. add the command to this switch statement to get it to work
     2. add the command to the commands.js file so it will appear in the list of commands
     3. add the command name and its associated value in commandInfo.js so it will track when that command is used
-    4. GO BACK AND COMMENT YOUR CODE, where you see fit {dont be lazy Alex, you'll just forget what it does Alex, and when you have to go back and comment hundreds and hundreds of lines of code that you don't remember how or why they work, Alex, you'll just be more angry at yourself Alex, and ruin 3 study halls Alex, when you could have been doing anything else Alex, like work or IDK WORKING ON THE BOT, ALEX! Alex; Aw sweet a schizo meltdown -> Dom}
+    4. GO BACK AND COMMENT YOUR CODE, where you see fit {dont be lazy Alex, you'll just forget what it does Alex, 
+    and when you have to go back and comment hundreds and hundreds of lines of code that you don't remember how or why they work, 
+    Alex, you'll just be more angry at yourself Alex, and ruin 3 study halls Alex, when you could have been doing anything else Alex, 
+    like work or IDK WORKING ON THE BOT, ALEX! Alex; Aw sweet a schizo meltdown -> Dom}
   */
 	switch (
 		command // find what the command was
@@ -89,7 +92,7 @@ client.on('message', message => {
     case 'math_commands':
       client.commands.get('commands').math(message, args);
       break;
-		case 'ping':
+	case 'ping':
       client.commands.get('simple').ping(message, args);
       break;
     case 'invite':
@@ -311,5 +314,5 @@ client.on('message', message => {
 keepAlive(); // keep this motherfucker alive
 
 // make sure this is always the last line
-const mySecret = fs.readFileSync("projectZeroPassword.txt").toString();
+const mySecret = fs.readFileSync("TextFiles/projectZeroPassword.txt").toString();
 client.login(mySecret);

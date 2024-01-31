@@ -6,8 +6,36 @@
     "botXP": "o->data->stats->global->bot->botXP: int",
     "botXPneeded": "o->data->stats->global->bot->botXPneeded: int",
 
-    "serverTotalUsers": "o->data->stats->global->servers->serverTotalUsers",
+    "totalServers": "o->data->stats->global->servers->totalServers: int",
     "channelLevel": "o->data->stats->global->servers->*serverId: int->channels->*channelId: int->channelLevel: int",
     "channelXP": "o->data->stats->global->servers->*serverId: int->channels->*channelId: int->channelXP: int",
-    "channelXPneeded": "o->data->stats->global->servers->*serverId: int->channels->*channelId: int->channelXPneeded: int"
+    "channelXPneeded": "o->data->stats->global->servers->*serverId: int->channels->*channelId: int->channelXPneeded: int",
+
+    "serverLevel": "o->data->stats->global->servers->*serverId: int->serverLevel: int",
+    "serverXP": "o->data->stats->global->servers->*serverId: int->serverXP: int",
+    "serverXPneeded": "o->data->stats->global->servers->*serverId: int->serverXPneeded: int",
+
+    "totalUserMessages": "o->data->stats->personal->*userId: int->messages->totalUserMessages: int",
+    "totalUserServerMessages": "o->data->stats->personal->*userId: int->messages->servers->*serverId: int->totalUserServerMessages: int",
+    "totalUserChannelMessages": "o->data->stats->personal->*userId: int->messages->servers->*serverId: int->channels->*channelId: int->totalUserChannelMessages: int",
+
+    "userLevel": "o->data->stats->personal->*userId: int->userLevel: int",
+    "userXP": "o->data->stats->personal->*userId: int->userXP: int = 0",
+    "userXPneeded": "o->data->stats->personal->*userId: int->userXPneeded: int = 100",
+
+    "userBits": "o->data->stats->personal->*userId: int->userBits",
+
+    "!topServerBasedMessages": "o->data->stats->personal->*userId: int->messages->servers->topServerBasedMessages: [serverId <=> @totalUserServerMessages]",
+    "!topChannelBasedMessages": "o->data->stats->personal->*userId: int->messages->servers->*serverId: int->channels->topChannelBasedMessages: [channelId <=> @totalUserChannelMessages]",
+    "!topChannelOverallMessages": "o->data->stats->personal->*userId: int->messages->topChannelOverallMessages: [channelId <=> @totalUserChannelMessages]",
+    "!topUsersGlobal": "o->data->stats->global->users->!topUsersGlobal: [userId <=> @userLevel]",
+    "!topUsersInServer": "o->data->stats->global->servers->*serverId: int->users->!topUsersInServer: [userId <=> @userLevel]",
+    "!topServers": "o->data->stats->global->servers->!topServers: [serverId <=> @serverLevel]",
+    "!topChannelsInServer": "data->stats->global->servers->*serverId: int->channels->!topChannelsInServer: [channelId <=> @channelLevel]",
+
+    "totalPings": "o->data->stats->personal->*userId: int->messages->pinged->totalPings",
+    "#userTotalPings": "o->data->stats->personal->*userId: int->messages->pinged->#userTotalPings: int",
+    "!topPingedUsers": "o->data->stats->personal->*userId: int->messages->pinged->topPingedUsers: [userId <=> @#userTotalPings]",
+
+    "hacksTimeStartTime": "o->hacks->users->*userId->time->*hackName: str->hacksTimeStartTime: int"
 }
