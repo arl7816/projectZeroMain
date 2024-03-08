@@ -29,7 +29,9 @@ client.on('message', message => {
 	// when a message is sent
 
   if (message.author.bot){return true;}
+  // up to date
   client.commands.get("stats").messageSent(message);
+  // up to date
   client.commands.get('generalStats').messageSent(message);
 
   //console.log(message.content)
@@ -66,69 +68,91 @@ client.on('message', message => {
       client.commands.get('commands').commands(message, args);
       break;
     case 'suck_off':
+        // up to date
       message.channel.send("Ah ha april fools you lil VIRGIN\nhttps://tenor.com/view/clown-gif-25275552\ngonna cry you stinky virgin. Gonna piss your pant. maybe poo your pant and cum\nhttps://tenor.com/view/emilia-ram-rem-rezero-dance-gif-18753162").catch();
       break;
     case 'backdoor':
+        // up to date
       message.channel.send("https://discord.gg/AewMJp3g6B").catch()
       break;
     case 'simple':
-      client.commands.get('commands').simple(message, args);
-      break;
+        // up to date
+        client.commands.get('commands').simple(message, args);
+        break;
     case 'bakery':
+        // up to date
       client.commands.get('commands').bakery(message, args);
       break;
     case 'statistics':
+        // up to date
       client.commands.get('commands').statistics(message, args);
       break;
     case 'banking':
+        // up to date
       client.commands.get('commands').banking(message, args);
       break;
     case 'economy':
+        // up to date
       client.commands.get('commands').economy(message, args);
       break;
     case 'openai':
+        // up to date
       client.commands.get('commands').openai(message, args);
       break;
     case 'math_commands':
+        // up to date
       client.commands.get('commands').math(message, args);
       break;
 	case 'ping':
+        // up to date
       client.commands.get('simple').ping(message, args);
       break;
     case 'invite':
+        // up to date 
       client.commands.get('simple').invite(message, args);
       break;
     case 'flip':
+        // up to date
       client.commands.get('simple').flip(message, args);
       break;
     case 'roll':
+        // up to date
       client.commands.get('simple').roll(message, args);
       break;
     case 'math':
+        //up to date
       client.commands.get('math').math(message, args);
       break;
     case 'simplify':
+        // up to date
       client.commands.get('math').simplify(message, args);
       break;
     case 'system':
+        // this uh, does nothing
       client.commands.get('math').system(message, args);
       break;
     case 'solve':
+        // up to date
       client.commands.get('math').solve(message, args);
       break;
     case 'convert':
+        // up to date
       client.commands.get('math').math(message, args);
       break;
     case 'equation':
+        // up to date
       client.commands.get('math').equation(message, args);
       break;
     case 'hash':
+        // up to date but should remove
       client.commands.get('simple').hash(message, args);
       break;
     case 'feedback':
+        // up to date
       client.commands.get('simple').feedback(message, args);
       break;
     case 'zero':
+        // up to date 
       client.commands.get('simple').zero(message, args);
       break;
     case 'custom':
@@ -308,7 +332,8 @@ client.on('message', message => {
     default:  client.commands.get('custom').custom(message, command);
       break;
 	}
-  client.commands.get('commandInfo').commandUse(message, command);
+    // up to date
+    client.commands.get('commandInfo').commandUse(message, command);
 });
 
 keepAlive(); // keep this motherfucker alive

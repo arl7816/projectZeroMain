@@ -4,13 +4,13 @@
 			"personal": {
 				"241330853496619009": {
 					"messages": {
-						"totalUserMessages": 27,
+						"totalUserMessages": 151,
 						"servers": {
 							"883502433416912896": {
-								"totalUserServerMessages": 15,
+								"totalUserServerMessages": 106,
 								"channels": {
 									"931598159644352573": {
-										"totalUserChannelMessages": 15
+										"totalUserChannelMessages": 81
 									},
 									"!topChannelBasedMessages": [
 										{
@@ -22,8 +22,60 @@
 												"931598159644352573"
 											],
 											"empty": 0
+										},
+										{
+											"id": "883502434033487896",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"241330853496619009",
+												"883502433416912896",
+												"883502434033487896"
+											],
+											"attributeName": 0
+										},
+										{
+											"id": "883502434549399592",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"241330853496619009",
+												"883502433416912896",
+												"883502434549399592"
+											],
+											"attributeName": 0
+										},
+										{
+											"id": "1047577431436951794",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"241330853496619009",
+												"883502433416912896",
+												"1047577431436951794"
+											],
+											"attributeName": 0
+										},
+										{
+											"id": "883502434549399593",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"241330853496619009",
+												"883502433416912896",
+												"883502434549399593"
+											],
+											"attributeName": 0
 										}
-									]
+									],
+									"883502434033487896": {
+										"totalUserChannelMessages": 9
+									},
+									"883502434549399592": {
+										"totalUserChannelMessages": 13
+									},
+									"1047577431436951794": {
+										"totalUserChannelMessages": 1
+									},
+									"883502434549399593": {
+										"totalUserChannelMessages": 2
+									}
 								}
 							},
 							"!topServerBasedMessages": [
@@ -48,10 +100,10 @@
 								}
 							],
 							"797331626873847849": {
-								"totalUserServerMessages": 12,
+								"totalUserServerMessages": 45,
 								"channels": {
 									"900174032446554162": {
-										"totalUserChannelMessages": 12
+										"totalUserChannelMessages": 45
 									},
 									"!topChannelBasedMessages": [
 										{
@@ -90,11 +142,52 @@
 								],
 								"empty": 0,
 								"attributeName": null
+							},
+							{
+								"id": "883502434033487896",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"241330853496619009",
+									"883502433416912896",
+									"883502434033487896"
+								],
+								"attributeName": 0
+							},
+							{
+								"id": "883502434549399592",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"241330853496619009",
+									"883502433416912896",
+									"883502434549399592"
+								],
+								"attributeName": 0
+							},
+							{
+								"id": "1047577431436951794",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"241330853496619009",
+									"883502433416912896",
+									"1047577431436951794"
+								],
+								"attributeName": 0
+							},
+							{
+								"id": "883502434549399593",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"241330853496619009",
+									"883502433416912896",
+									"883502434549399593"
+								],
+								"attributeName": 0
 							}
 						],
 						"pinged": {
-							"totalPings": 10,
-							"894043486637137961": 5,
+							"0": 2,
+							"totalPings": 13,
+							"894043486637137961": 6,
 							"!topPingedUsers": [
 								{
 									"id": "894043486637137961",
@@ -113,25 +206,33 @@
 									],
 									"empty": 0,
 									"attributeName": "797330901838856209"
+								},
+								{
+									"id": "276731173865259009",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"241330853496619009"
+									],
+									"attributeName": 0
 								}
 							],
 							"797330901838856209": 1
 						}
 					},
-					"userBits": 14,
-					"userXP": 3,
-					"userLevel": 0,
-					"userXPneeded": 100
+					"userBits": 138,
+					"userXP": 3.0707830218814944e+31,
+					"userLevel": 28,
+					"userXPneeded": 26843545600
 				},
 				"276731173865259009": {
 					"messages": {
-						"totalUserMessages": 1,
+						"totalUserMessages": 36,
 						"servers": {
 							"690338432421199892": {
-								"totalUserServerMessages": 1,
+								"totalUserServerMessages": 25,
 								"channels": {
 									"690348223352537098": {
-										"totalUserChannelMessages": 1
+										"totalUserChannelMessages": 25
 									},
 									"!topChannelBasedMessages": [
 										{
@@ -156,8 +257,63 @@
 										"690338432421199892"
 									],
 									"empty": 0
+								},
+								{
+									"id": "883502433416912896",
+									"ratingValue": "totalUserServerMessages",
+									"keys": [
+										"276731173865259009",
+										"883502433416912896"
+									],
+									"attributeName": 0
 								}
-							]
+							],
+							"883502433416912896": {
+								"totalUserServerMessages": 11,
+								"channels": {
+									"883502434033487896": {
+										"totalUserChannelMessages": 8
+									},
+									"!topChannelBasedMessages": [
+										{
+											"id": "883502434033487896",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"276731173865259009",
+												"883502433416912896",
+												"883502434033487896"
+											],
+											"attributeName": 0
+										},
+										{
+											"id": "883502434549399592",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"276731173865259009",
+												"883502433416912896",
+												"883502434549399592"
+											],
+											"attributeName": 0
+										},
+										{
+											"id": "883502434549399594",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"276731173865259009",
+												"883502433416912896",
+												"883502434549399594"
+											],
+											"attributeName": 0
+										}
+									],
+									"883502434549399592": {
+										"totalUserChannelMessages": 1
+									},
+									"883502434549399594": {
+										"totalUserChannelMessages": 2
+									}
+								}
+							}
 						},
 						"!topChannelOverallMessages": [
 							{
@@ -169,19 +325,67 @@
 									"690348223352537098"
 								],
 								"empty": 0
+							},
+							{
+								"id": "883502434033487896",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"276731173865259009",
+									"883502433416912896",
+									"883502434033487896"
+								],
+								"attributeName": 0
+							},
+							{
+								"id": "883502434549399592",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"276731173865259009",
+									"883502433416912896",
+									"883502434549399592"
+								],
+								"attributeName": 0
+							},
+							{
+								"id": "883502434549399594",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"276731173865259009",
+									"883502433416912896",
+									"883502434549399594"
+								],
+								"attributeName": 0
 							}
-						]
-					}
+						],
+						"pinged": {
+							"0": 1,
+							"totalPings": 1,
+							"!topPingedUsers": [
+								{
+									"id": "375749341492805642",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"276731173865259009"
+									],
+									"attributeName": 0
+								}
+							]
+						}
+					},
+					"userXP": 35,
+					"userLevel": 0,
+					"userXPneeded": 100,
+					"userBits": 35
 				},
 				"316680095458918421": {
 					"messages": {
-						"totalUserMessages": 1,
+						"totalUserMessages": 33,
 						"servers": {
 							"690338432421199892": {
-								"totalUserServerMessages": 1,
+								"totalUserServerMessages": 17,
 								"channels": {
 									"690348223352537098": {
-										"totalUserChannelMessages": 1
+										"totalUserChannelMessages": 17
 									},
 									"!topChannelBasedMessages": [
 										{
@@ -208,8 +412,76 @@
 									],
 									"empty": 0,
 									"attributeName": null
+								},
+								{
+									"id": "883502433416912896",
+									"ratingValue": "totalUserServerMessages",
+									"keys": [
+										"316680095458918421",
+										"883502433416912896"
+									],
+									"attributeName": 0
 								}
-							]
+							],
+							"883502433416912896": {
+								"totalUserServerMessages": 16,
+								"channels": {
+									"883502434033487896": {
+										"totalUserChannelMessages": 5
+									},
+									"!topChannelBasedMessages": [
+										{
+											"id": "883502434033487896",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"276731173865259009",
+												"883502433416912896",
+												"883502434033487896"
+											],
+											"attributeName": 0
+										},
+										{
+											"id": "883502434549399592",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"316680095458918421",
+												"883502433416912896",
+												"883502434549399592"
+											],
+											"attributeName": 0
+										},
+										{
+											"id": "883502434549399593",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"316680095458918421",
+												"883502433416912896",
+												"883502434549399593"
+											],
+											"attributeName": 0
+										},
+										{
+											"id": "883502434549399594",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"316680095458918421",
+												"883502433416912896",
+												"883502434549399594"
+											],
+											"attributeName": 0
+										}
+									],
+									"883502434549399592": {
+										"totalUserChannelMessages": 5
+									},
+									"883502434549399593": {
+										"totalUserChannelMessages": 5
+									},
+									"883502434549399594": {
+										"totalUserChannelMessages": 1
+									}
+								}
+							}
 						},
 						"!topChannelOverallMessages": [
 							{
@@ -222,19 +494,93 @@
 								],
 								"empty": 0,
 								"attributeName": null
+							},
+							{
+								"id": "883502434033487896",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"316680095458918421",
+									"883502433416912896",
+									"883502434033487896"
+								],
+								"attributeName": 0
+							},
+							{
+								"id": "883502434549399592",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"316680095458918421",
+									"883502433416912896",
+									"883502434549399592"
+								],
+								"attributeName": 0
+							},
+							{
+								"id": "883502434549399593",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"316680095458918421",
+									"883502433416912896",
+									"883502434549399593"
+								],
+								"attributeName": 0
+							},
+							{
+								"id": "883502434549399594",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"316680095458918421",
+									"883502433416912896",
+									"883502434549399594"
+								],
+								"attributeName": 0
 							}
-						]
-					}
+						],
+						"pinged": {
+							"0": 4,
+							"totalPings": 4,
+							"!topPingedUsers": [
+								{
+									"id": "241330853496619009",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"316680095458918421"
+									],
+									"attributeName": 0
+								},
+								{
+									"id": "192397064930459648",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"316680095458918421"
+									],
+									"attributeName": 0
+								},
+								{
+									"id": "216298664400912387",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"316680095458918421"
+									],
+									"attributeName": 0
+								}
+							]
+						}
+					},
+					"userXP": 32,
+					"userLevel": 0,
+					"userXPneeded": 100,
+					"userBits": 32
 				},
 				"192397064930459648": {
 					"messages": {
-						"totalUserMessages": 9,
+						"totalUserMessages": 94,
 						"servers": {
 							"690338432421199892": {
-								"totalUserServerMessages": 1,
+								"totalUserServerMessages": 60,
 								"channels": {
 									"690348223352537098": {
-										"totalUserChannelMessages": 1
+										"totalUserChannelMessages": 60
 									},
 									"!topChannelBasedMessages": [
 										{
@@ -271,13 +617,22 @@
 									],
 									"empty": 0,
 									"attributeName": null
+								},
+								{
+									"id": "883502433416912896",
+									"ratingValue": "totalUserServerMessages",
+									"keys": [
+										"192397064930459648",
+										"883502433416912896"
+									],
+									"attributeName": 0
 								}
 							],
 							"797331626873847849": {
-								"totalUserServerMessages": 8,
+								"totalUserServerMessages": 15,
 								"channels": {
 									"900174032446554162": {
-										"totalUserChannelMessages": 8
+										"totalUserChannelMessages": 15
 									},
 									"!topChannelBasedMessages": [
 										{
@@ -292,6 +647,52 @@
 											"attributeName": null
 										}
 									]
+								}
+							},
+							"883502433416912896": {
+								"totalUserServerMessages": 19,
+								"channels": {
+									"883502434033487896": {
+										"totalUserChannelMessages": 5
+									},
+									"!topChannelBasedMessages": [
+										{
+											"id": "883502434033487896",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"192397064930459648",
+												"883502433416912896",
+												"883502434033487896"
+											],
+											"attributeName": 0
+										},
+										{
+											"id": "883502434549399592",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"192397064930459648",
+												"883502433416912896",
+												"883502434549399592"
+											],
+											"attributeName": 0
+										},
+										{
+											"id": "883502434549399594",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"192397064930459648",
+												"883502433416912896",
+												"883502434549399594"
+											],
+											"attributeName": 0
+										}
+									],
+									"883502434549399592": {
+										"totalUserChannelMessages": 10
+									},
+									"883502434549399594": {
+										"totalUserChannelMessages": 4
+									}
 								}
 							}
 						},
@@ -317,26 +718,475 @@
 								],
 								"empty": 0,
 								"attributeName": null
+							},
+							{
+								"id": "883502434033487896",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"192397064930459648",
+									"883502433416912896",
+									"883502434033487896"
+								],
+								"attributeName": 0
+							},
+							{
+								"id": "883502434549399592",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"192397064930459648",
+									"883502433416912896",
+									"883502434549399592"
+								],
+								"attributeName": 0
+							},
+							{
+								"id": "883502434549399594",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"192397064930459648",
+									"883502433416912896",
+									"883502434549399594"
+								],
+								"attributeName": 0
 							}
-						]
+						],
+						"pinged": {
+							"0": 1,
+							"totalPings": 1,
+							"!topPingedUsers": [
+								{
+									"id": "375749341492805642",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"276731173865259009"
+									],
+									"attributeName": 0
+								},
+								{
+									"id": "263435864468619265",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"192397064930459648"
+									],
+									"attributeName": 0
+								}
+							]
+						}
 					},
-					"userXP": 1,
+					"userXP": 86,
 					"userLevel": 0,
 					"userXPneeded": 100,
-					"userBits": 8
+					"userBits": 93
+				},
+				"375749341492805642": {
+					"userXP": 72,
+					"userLevel": 0,
+					"userXPneeded": 100,
+					"userBits": 72,
+					"messages": {
+						"totalUserMessages": 72,
+						"servers": {
+							"690338432421199892": {
+								"totalUserServerMessages": 65,
+								"channels": {
+									"690348223352537098": {
+										"totalUserChannelMessages": 65
+									},
+									"!topChannelBasedMessages": [
+										{
+											"id": "690348223352537098",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"375749341492805642",
+												"690338432421199892",
+												"690348223352537098"
+											],
+											"empty": 0,
+											"attributeName": null
+										}
+									]
+								}
+							},
+							"!topServerBasedMessages": [
+								{
+									"id": "690338432421199892",
+									"ratingValue": "totalUserServerMessages",
+									"keys": [
+										"375749341492805642",
+										"690338432421199892"
+									],
+									"empty": 0,
+									"attributeName": null
+								},
+								{
+									"id": "883502433416912896",
+									"ratingValue": "totalUserServerMessages",
+									"keys": [
+										"375749341492805642",
+										"883502433416912896"
+									],
+									"attributeName": 0
+								}
+							],
+							"883502433416912896": {
+								"totalUserServerMessages": 7,
+								"channels": {
+									"883502434549399592": {
+										"totalUserChannelMessages": 1
+									},
+									"!topChannelBasedMessages": [
+										{
+											"id": "883502434549399592",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"375749341492805642",
+												"883502433416912896",
+												"883502434549399592"
+											],
+											"attributeName": 0
+										},
+										{
+											"id": "883502434549399594",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"375749341492805642",
+												"883502433416912896",
+												"883502434549399594"
+											],
+											"attributeName": 0
+										}
+									],
+									"883502434549399594": {
+										"totalUserChannelMessages": 6
+									}
+								}
+							}
+						},
+						"!topChannelOverallMessages": [
+							{
+								"id": "690348223352537098",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"375749341492805642",
+									"690338432421199892",
+									"690348223352537098"
+								],
+								"empty": 0,
+								"attributeName": null
+							},
+							{
+								"id": "883502434549399592",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"375749341492805642",
+									"883502433416912896",
+									"883502434549399592"
+								],
+								"attributeName": 0
+							},
+							{
+								"id": "883502434549399594",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"375749341492805642",
+									"883502433416912896",
+									"883502434549399594"
+								],
+								"attributeName": 0
+							}
+						],
+						"pinged": {
+							"0": 2,
+							"totalPings": 6,
+							"192397064930459648": 3,
+							"!topPingedUsers": [
+								{
+									"id": "192397064930459648",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"375749341492805642"
+									],
+									"empty": 0,
+									"attributeName": "192397064930459648"
+								},
+								{
+									"id": "562738573283950612",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"375749341492805642"
+									],
+									"empty": 0,
+									"attributeName": "562738573283950612"
+								},
+								{
+									"id": "276731173865259009",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"375749341492805642"
+									],
+									"attributeName": 0
+								},
+								{
+									"id": "216298664400912387",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"375749341492805642"
+									],
+									"attributeName": 0
+								}
+							],
+							"562738573283950612": 1
+						}
+					}
+				},
+				"263435864468619265": {
+					"userXP": 82,
+					"userLevel": 0,
+					"userXPneeded": 100,
+					"userBits": 82,
+					"messages": {
+						"totalUserMessages": 82,
+						"servers": {
+							"690338432421199892": {
+								"totalUserServerMessages": 73,
+								"channels": {
+									"690348223352537098": {
+										"totalUserChannelMessages": 73
+									},
+									"!topChannelBasedMessages": [
+										{
+											"id": "690348223352537098",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"263435864468619265",
+												"690338432421199892",
+												"690348223352537098"
+											],
+											"empty": 0,
+											"attributeName": null
+										}
+									]
+								}
+							},
+							"!topServerBasedMessages": [
+								{
+									"id": "690338432421199892",
+									"ratingValue": "totalUserServerMessages",
+									"keys": [
+										"263435864468619265",
+										"690338432421199892"
+									],
+									"empty": 0,
+									"attributeName": null
+								},
+								{
+									"id": "883502433416912896",
+									"ratingValue": "totalUserServerMessages",
+									"keys": [
+										"263435864468619265",
+										"883502433416912896"
+									],
+									"attributeName": 0
+								}
+							],
+							"883502433416912896": {
+								"totalUserServerMessages": 9,
+								"channels": {
+									"883502434549399592": {
+										"totalUserChannelMessages": 9
+									},
+									"!topChannelBasedMessages": [
+										{
+											"id": "883502434033487896",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"276731173865259009",
+												"883502433416912896",
+												"883502434033487896"
+											],
+											"attributeName": 0
+										},
+										{
+											"id": "883502434549399592",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"263435864468619265",
+												"883502433416912896",
+												"883502434549399592"
+											],
+											"attributeName": 0
+										}
+									]
+								}
+							}
+						},
+						"!topChannelOverallMessages": [
+							{
+								"id": "690348223352537098",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"263435864468619265",
+									"690338432421199892",
+									"690348223352537098"
+								],
+								"empty": 0,
+								"attributeName": null
+							},
+							{
+								"id": "883502434549399592",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"263435864468619265",
+									"883502433416912896",
+									"883502434549399592"
+								],
+								"attributeName": 0
+							}
+						],
+						"pinged": {
+							"0": 1,
+							"totalPings": 2,
+							"562738573283950612": 1,
+							"!topPingedUsers": [
+								{
+									"id": "562738573283950612",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"263435864468619265"
+									],
+									"empty": 0,
+									"attributeName": "562738573283950612"
+								},
+								{
+									"id": "192397064930459648",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"263435864468619265"
+									],
+									"attributeName": 0
+								}
+							]
+						}
+					}
+				},
+				"562738573283950612": {
+					"userXP": 36,
+					"userLevel": 0,
+					"userXPneeded": 100,
+					"userBits": 36,
+					"messages": {
+						"totalUserMessages": 36,
+						"servers": {
+							"690338432421199892": {
+								"totalUserServerMessages": 36,
+								"channels": {
+									"690348223352537098": {
+										"totalUserChannelMessages": 36
+									},
+									"!topChannelBasedMessages": [
+										{
+											"id": "690348223352537098",
+											"ratingValue": "totalUserChannelMessages",
+											"keys": [
+												"562738573283950612",
+												"690338432421199892",
+												"690348223352537098"
+											],
+											"empty": 0,
+											"attributeName": null
+										}
+									]
+								}
+							},
+							"!topServerBasedMessages": [
+								{
+									"id": "690338432421199892",
+									"ratingValue": "totalUserServerMessages",
+									"keys": [
+										"562738573283950612",
+										"690338432421199892"
+									],
+									"empty": 0,
+									"attributeName": null
+								}
+							]
+						},
+						"!topChannelOverallMessages": [
+							{
+								"id": "690348223352537098",
+								"ratingValue": "totalUserChannelMessages",
+								"keys": [
+									"562738573283950612",
+									"690338432421199892",
+									"690348223352537098"
+								],
+								"empty": 0,
+								"attributeName": null
+							}
+						],
+						"pinged": {
+							"0": 1,
+							"totalPings": 1,
+							"!topPingedUsers": [
+								{
+									"id": "375749341492805642",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"276731173865259009"
+									],
+									"attributeName": 0
+								},
+								{
+									"id": "263435864468619265",
+									"ratingValue": "#userTotalPings",
+									"keys": [
+										"192397064930459648"
+									],
+									"attributeName": 0
+								}
+							]
+						}
+					}
 				}
 			},
 			"global": {
 				"servers": {
 					"883502433416912896": {
-						"serverXP": 75,
+						"serverXP": 815,
 						"channels": {
 							"931598159644352573": {
-								"channelXP": 75,
+								"channelXP": 380,
+								"channelXPneeded": 100,
+								"channelLevel": 0
+							},
+							"undefined": {
+								"channelLevel": 1,
+								"channelXPneeded": 200
+							},
+							"883502434033487896": {
+								"channelXP": 135,
+								"channelXPneeded": 100,
+								"channelLevel": 1
+							},
+							"883502434549399592": {
+								"channelXP": 195,
+								"channelXPneeded": 100,
+								"channelLevel": 1
+							},
+							"1047577431436951794": {
+								"channelXP": 5,
+								"channelXPneeded": 100
+							},
+							"883502434549399593": {
+								"channelXP": 35,
+								"channelXPneeded": 100
+							},
+							"883502434549399594": {
+								"channelXP": 65,
 								"channelXPneeded": 100
 							}
 						},
-						"serverXPneeded": 100,
+						"serverXPneeded": 1600,
 						"users": {
 							"!topUsersInServer": [
 								{
@@ -347,19 +1197,124 @@
 									],
 									"empty": 0,
 									"attributeName": null
+								},
+								{
+									"id": "192397064930459648",
+									"ratingValue": "userLevel",
+									"keys": [
+										"192397064930459648"
+									],
+									"attributeName": null
+								},
+								{
+									"id": "276731173865259009",
+									"ratingValue": "userLevel",
+									"keys": [
+										"276731173865259009"
+									],
+									"attributeName": null
+								},
+								{
+									"id": "316680095458918421",
+									"ratingValue": "userLevel",
+									"keys": [
+										"316680095458918421"
+									],
+									"attributeName": null
+								},
+								{
+									"id": "263435864468619265",
+									"ratingValue": "userLevel",
+									"keys": [
+										"263435864468619265"
+									],
+									"attributeName": null
+								},
+								{
+									"id": "375749341492805642",
+									"ratingValue": "userLevel",
+									"keys": [
+										"375749341492805642"
+									],
+									"attributeName": null
 								}
 							]
-						}
+						},
+						"serverLevel": 4
 					},
 					"690338432421199892": {
-						"serverXP": 15,
+						"serverXP": 1380,
 						"channels": {
 							"690348223352537098": {
-								"channelXP": 15,
-								"channelXPneeded": 100
+								"channelXP": 1380,
+								"channelXPneeded": 100,
+								"channelLevel": 0
+							},
+							"undefined": {
+								"channelLevel": 1,
+								"channelXPneeded": 200
 							}
 						},
-						"serverXPneeded": 100
+						"serverXPneeded": 1600,
+						"users": {
+							"!topUsersInServer": [
+								{
+									"id": "192397064930459648",
+									"ratingValue": "userLevel",
+									"keys": [
+										"192397064930459648"
+									],
+									"empty": 0,
+									"attributeName": null
+								},
+								{
+									"id": "276731173865259009",
+									"ratingValue": "userLevel",
+									"keys": [
+										"276731173865259009"
+									],
+									"empty": 0,
+									"attributeName": null
+								},
+								{
+									"id": "375749341492805642",
+									"ratingValue": "userLevel",
+									"keys": [
+										"375749341492805642"
+									],
+									"empty": 0,
+									"attributeName": null
+								},
+								{
+									"id": "316680095458918421",
+									"ratingValue": "userLevel",
+									"keys": [
+										"316680095458918421"
+									],
+									"empty": 0,
+									"attributeName": null
+								},
+								{
+									"id": "263435864468619265",
+									"ratingValue": "userLevel",
+									"keys": [
+										"263435864468619265"
+									],
+									"empty": 0,
+									"attributeName": null
+								},
+								{
+									"id": "562738573283950612",
+									"ratingValue": "userLevel",
+									"keys": [
+										"562738573283950612"
+									],
+									"empty": 0,
+									"attributeName": null
+								}
+							]
+						},
+						"serverLevel": 4
 					},
 					"797331626873847849": {
 						"users": {
@@ -384,14 +1339,20 @@
 								}
 							]
 						},
-						"serverXP": 95,
+						"serverXP": 295,
 						"channels": {
 							"900174032446554162": {
-								"channelXP": 95,
-								"channelXPneeded": 100
+								"channelXP": 295,
+								"channelXPneeded": 100,
+								"channelLevel": 0
+							},
+							"undefined": {
+								"channelLevel": 1,
+								"channelXPneeded": 200
 							}
 						},
-						"serverXPneeded": 100
+						"serverXPneeded": 400,
+						"serverLevel": 2
 					}
 				},
 				"users": {
@@ -413,12 +1374,159 @@
 							],
 							"empty": 0,
 							"attributeName": null
+						},
+						{
+							"id": "276731173865259009",
+							"ratingValue": "userLevel",
+							"keys": [
+								"276731173865259009"
+							],
+							"empty": 0,
+							"attributeName": null
+						},
+						{
+							"id": "375749341492805642",
+							"ratingValue": "userLevel",
+							"keys": [
+								"375749341492805642"
+							],
+							"empty": 0,
+							"attributeName": null
+						},
+						{
+							"id": "316680095458918421",
+							"ratingValue": "userLevel",
+							"keys": [
+								"316680095458918421"
+							],
+							"empty": 0,
+							"attributeName": null
+						},
+						{
+							"id": "263435864468619265",
+							"ratingValue": "userLevel",
+							"keys": [
+								"263435864468619265"
+							],
+							"empty": 0,
+							"attributeName": null
+						},
+						{
+							"id": "562738573283950612",
+							"ratingValue": "userLevel",
+							"keys": [
+								"562738573283950612"
+							],
+							"empty": 0,
+							"attributeName": null
 						}
 					]
 				},
 				"bot": {
 					"bits": {
-						"botTotalBits": 22
+						"botTotalBits": 488
+					},
+					"botXP": 3310,
+					"botXPneeded": 6400,
+					"botLevel": 7
+				}
+			}
+		}
+	},
+	"stats": {
+		"global": {
+			"servers": {
+				"883502433416912896": {
+					"channels": {
+						"!topChannelsInServer": [
+							{
+								"id": "883502433416912896",
+								"ratingValue": "serverLevel",
+								"keys": [
+									"883502433416912896"
+								],
+								"empty": 0,
+								"attributeName": null
+							},
+							{
+								"id": "931598159644352573",
+								"ratingValue": "channelLevel",
+								"keys": [
+									"883502433416912896",
+									"931598159644352573"
+								],
+								"empty": 0,
+								"attributeName": null
+							},
+							{
+								"id": "883502434033487896",
+								"ratingValue": "channelLevel",
+								"keys": [
+									"883502433416912896",
+									"883502434033487896"
+								],
+								"attributeName": 0
+							},
+							{
+								"id": "883502434549399592",
+								"ratingValue": "channelLevel",
+								"keys": [
+									"883502433416912896",
+									"883502434549399592"
+								],
+								"attributeName": 0
+							}
+						]
+					}
+				},
+				"797331626873847849": {
+					"channels": {
+						"!topChannelsInServer": [
+							{
+								"id": "797331626873847849",
+								"ratingValue": "serverLevel",
+								"keys": [
+									"797331626873847849"
+								],
+								"empty": 0,
+								"attributeName": null
+							},
+							{
+								"id": "900174032446554162",
+								"ratingValue": "channelLevel",
+								"keys": [
+									"797331626873847849",
+									"900174032446554162"
+								],
+								"empty": 0,
+								"attributeName": null
+							}
+						]
+					}
+				},
+				"690338432421199892": {
+					"channels": {
+						"!topChannelsInServer": [
+							{
+								"id": "690338432421199892",
+								"ratingValue": "serverLevel",
+								"keys": [
+									"690338432421199892"
+								],
+								"empty": 0,
+								"attributeName": null
+							},
+							{
+								"id": "690348223352537098",
+								"ratingValue": "channelLevel",
+								"keys": [
+									"690338432421199892",
+									"690348223352537098"
+								],
+								"empty": 0,
+								"attributeName": null
+							}
+						]
 					}
 				}
 			}

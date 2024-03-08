@@ -180,7 +180,7 @@ module.exports = {
             dm.get("serverXPneeded", [serverId]) * 2,
         [serverId]);
 
-      dm.updateArray("!topChannelsInServer", serverId, "serverLevel", null, [serverId], 0);
+      dm.updateArray("!topChannelsInServer", serverId, "serverLevel", [serverId], [serverId], 0);
     }
 
     // checks if channels need level up

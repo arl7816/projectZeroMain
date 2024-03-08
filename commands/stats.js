@@ -216,7 +216,6 @@ module.exports = {
           dm.update("totalPings", [id], x => x + 1, 0);
 
           dm.update("#userTotalPings", [id], x => x + 1, 0, userId);
-          
 
           dm.updateArray("!topPingedUsers", userId, "#userTotalPings", [id], [id], 0, userId);
 

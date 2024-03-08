@@ -37,5 +37,8 @@
     "#userTotalPings": "o->data->stats->personal->*userId: int->messages->pinged->#userTotalPings: int",
     "!topPingedUsers": "o->data->stats->personal->*userId: int->messages->pinged->topPingedUsers: [userId <=> @#userTotalPings]",
 
-    "hacksTimeStartTime": "o->hacks->users->*userId->time->*hackName: str->hacksTimeStartTime: int"
+    "hacksTimeStartTime": "o->hacks->users->*userId->time->*hackName: str->hacksTimeStartTime: int",
+
+    "#customCommand": "o->commands->custom->*userId: int->#customCommand: string",
+    "totalCommandsUsed": "o->commands->totalCommandsUsed: int"
 }

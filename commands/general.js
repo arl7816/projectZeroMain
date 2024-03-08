@@ -14,19 +14,19 @@ module.exports = {
     var hacks = new DataManager("JSONFiles/hacks.json", "JSONFiles/mapper.json");
 
     if (hacks.checkPath("hacks->users->*userId->time->boost", [userId])){
-      var deltaTime = Math.abs(new Date().getTime() / 1000 - hacks.get("hacksTimeStartTime", [userId, "boost"], 0));
+      var deltaTime = Math.abs(new Date().getTime() / 1000 - hacks.get("hacksTimeStartTime", [userId, "boost"]));
       if (hackDefault.hacks["tier1"]["boost"].maxTime - deltaTime > 0){
         xp *= 2
       }
     }
 
-    data.updateArray("!topUsersGlobal", userId, "userLevel", null, [userId], 0);
+    data.updateArray("!topUsersGlobal", userId, "userLevel", [userId]);
 
-    data.updateArray("!topUsersInServer", userId, "userLevel", [serverId], [userId], 0);
+    data.updateArray("!topUsersInServer", userId, "userLevel", [serverId], [userId]);
 
 
-    data.update("userXP", [userId], x => x + (x * data.get("userLevel", [userId], 0) + 1), 0)
-    if (data.get("userXP", [userId], 0) >= data.get("userXPneeded", [userId], 100)){
+    data.update("userXP", [userId], x => x + (x * data.get("userLevel", [userId]) + 1))
+    if (data.get("userXP", [userId]) >= data.get("userXPneeded", [userId])){
         data.update("userXPneeded", [userId], x => x * 2);
         data.update("userLevel", [userId], x => x + 1);
     }
@@ -34,14 +34,14 @@ module.exports = {
     //
 
     if (hacks.checkPath("hacks->users->*userId->time->fishing_line", [userId])){
-      var deltaTime = Math.abs(new Date().getTime() / 1000 - hacks.get("hacksTimeStartTime", [userId, "fishing_line"], 0))
+      var deltaTime = Math.abs(new Date().getTime() / 1000 - hacks.get("hacksTimeStartTime", [userId, "fishing_line"]))
       if (hackDefault.hacks["tier1"]["fishing_line"].maxTime - deltaTime > 0){
-        data.update("userBits", [userId], x => x + 5, 0);
+        data.update("userBits", [userId], x => x + 5);
       }
     }
 
-    data.update("userBits", [userId], x => x + 1, 0);
-    data.update("botTotalBits", null, x => x + 1, 0);
+    data.update("userBits", [userId], x => x + 1);
+    data.update("botTotalBits", null, x => x + 1);
 
     hacks.close();
 

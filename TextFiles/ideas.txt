@@ -51,3 +51,5 @@ MrRayGun: add some organization to this all
 MrRayGun: organize shit like the store and thumbnail
 
 MrRayGun: give ability to looking into other people's stocks
+
+mrraygun: hi

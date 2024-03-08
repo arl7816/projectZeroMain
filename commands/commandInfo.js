@@ -1,3 +1,4 @@
+const DataManager = require("./DataManager");
 const general = require("./general");
 
 // dictionary of every command and its type 
@@ -123,76 +124,50 @@ module.exports = {
   },
 
   commandUse(message, command){
-    let custom = general.readFile("JSONFiles/custom.json");
-    custom = custom[message.author.id] // will be null if the person doesnt have any custom commands
-
-    if (custom == null){ // if the user doesnt have customs, give them an empty list
-      custom = {};
-    }
+    let customDm = new DataManager("JSONFiles/custom.json");
 
     let id = message.author.id;
 
     // check to see if this person used a command in the first place
-    if (commands[command] != null || custom[command] != null){
+    if (commands[command] != null || 
+        customDm.checkAttri("#customCommand", [id], command) == true){
 
       // get the type, if there is none, than it must be a custom
       let type = commands[command] != null ? commands[command] : "custom"
 
-      let data = general.readFile();
+      let dm = new DataManager("JSONFiles/data.json");
 
-      // increase the bot xp and adjust level if need be
-      data.stats.global.bot.xp += 10 * data.stats.personal[id].level;
-      if (data.stats.global.bot.xpNeeded <= data.stats.global.bot.xp){
-        data.stats.global.bot.xpNeeded *= 2;
-        data.stats.global.bot.level++;
+      dm.update("botXP", null, x => x + 10 * dm.get("userLevel", [id], 0));
+      if (dm.get("botXPneeded") <= dm.get("botXP")){
+        dm.update("botXPneeded", null, x => x * 2);
+        dm.update("botLevel", null, x => x + 1);
       }
 
-      data.stats.global.bot.commands.total++;
+      customDm.update("totalCommandsUsed", null, x => x + 1);
+
+      customDm.update("totalGlobalCommandUsed", [command], x => x + 1);
+      customDm.updateArray("!topCommandsUsed", command, "totalGlobalCommandUsed", null, [command]);
       
-      if (data.stats.global.bot.commands.command[command] == null){
-        data.stats.global.bot.commands.command[command] = {total: 0, type: type};
-      }
-      data.stats.global.bot.commands.command[command].total++;
-      data.stats.global.bot.commands.command.top = general.newTop(data.stats.global.bot.commands.command.top, {id: command, total: data.stats.global.bot.commands.command[command].total}, 10);
+      customDm.update("totalGlobalTypesUsed", [type], x => x + 1);
+      customDm.updateArray("!topTypesUsed", type, "totalGlobalTypesUsed", null, [type]);
+      
+      
+      customDm.update("totalPersonalCommandsUsed", [id], x => x + 1);
 
-      if (data.stats.global.bot.commands.types[type] == null){
-        data.stats.global.bot.commands.types[type] = {total: 0};
-      }
-      data.stats.global.bot.commands.types[type].total++;
-      data.stats.global.bot.commands.types.top = general.newTop(data.stats.global.bot.commands.types.top, {id: type, total: data.stats.global.bot.commands.types[type].total}, 10);
-
-      if (data.stats.personal[id].commands == null){
-        data.stats.personal[id].commands = {
-          total: 0,
-          topCommands: [], // fixed length of 10
-          topTypes: [], // fixed length of 10
-          types: {}
-        }
-      }
-
-      data.stats.personal[id].commands.total++;
 
       // increase the command
-      if (data.stats.personal[id].commands[command] == null){
-        data.stats.personal[id].commands[command] = {
-          total: 0, type: type
-        }
-      }
-      data.stats.personal[id].commands[command].total++;
+      customDm.update("#totalPersonalCommand", [id], x => x + 1, command);
       // resort the top commands
-      data.stats.personal[id].commands.topCommands = general.newTop(data.stats.personal[id].commands.topCommands, {id: command, total: data.stats.personal[id].commands[command].total}, 10);
       
+      customDm.updateArray("!topPersonalCommands", command, "#totalPersonalCommand", [id], [id], command);
 
-      // check for the type
-      if (data.stats.personal[id].commands.types[type] == null){
-        data.stats.personal[id].commands.types[type] = 0;
-      }
-      data.stats.personal[id].commands.types[type]++;
+      customDm.update("#totalPersonalType", [id], x => x + 1, type);
 
       // resort the top
-      data.stats.personal[id].commands.topTypes = general.newTop(data.stats.personal[id].commands.topTypes, {id: type, total: data.stats.personal[id].commands.types[type]}, 10);
+      customDm.updateArray("!topPersonalTypes", type, "#totalPersonalType", [id], [id], type);
 
-      general.writeFile(data);
+      customDm.close();
+      dm.close();
     }
   }
 }
