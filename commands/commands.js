@@ -78,7 +78,7 @@ module.exports = {
 
     // ingredients: 'what a person can get'
     // oven: 'the quanity of cooks'
-    // ads: increases the odds of finding bits (not implement)
+    // ads: increases the odds of finding bits (not implemented)
     // shop: increases the amount earned for selling
     // magic: doubles cookies randomly per bake (not implemented)
     // workers: increases the amount of bakes you can do per day

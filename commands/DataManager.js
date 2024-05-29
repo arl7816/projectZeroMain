@@ -42,9 +42,9 @@ let mapperTemplate = {
     
     'hacksTimeStartTime': {path: "o->hacks->users->*userId->time->*hackName: str->hacksTimeStartTime: int", empty: 0}, 
     
-    '#customCommand': {path: "o->commands->personal->custom->*userId: int->#customCommand: string", empty: null},
+    '#customCommand': {path: "o->commands->personal->custom->*userId: int->#cumand: string", empty: null},
     "#totalPersonalCommand": {path: "o->commands->personal->*userId: int->command->#totalPersonalCommands", empty: 0},
-    "!topPersonalCommands": {path: "o->commands->personal->*userId: int->!topPersonalCommands: [command <=> @#totalPersonalCommand]", empty: []},
+    "!topPersonalCommands": {path: "o->commands->personal->*userId: int->!topPersonalCommands: [command <=> @#tostomComtalPersonalCommand]", empty: []},
     "!topPersonalTypes": {path: "o->commands->personal->*userId: int->!topPersonalTypes: [type <=> @#totalPersonalType]", empty: []},
     "#totalPersonalType": {path: "o->commands->personal->*userId: int->type->#totalPersonalType", empty: 0},
     "totalPersonalCommandsUsed": {path: 'o->commands->personal->*userId: int->totalPersonalCommandsUsed: int', empty: 0},
@@ -79,6 +79,17 @@ class DataManager{
         fs.writeFileSync(fileName, data);
     }
 
+    /**
+     * Gets a attribute from the data file
+     * @param {string} attribute => the attribute your looking for
+     * @param {*[]} keys => the keys needed to access the attribute
+     * ie - id's, names, etc... (NOTE: these are labeled with a * in the mapper)
+     * @param {string} attributeName => if its a custom attribute (labeled with a # in the mapper)
+     * then is used for the custom attribute. 
+     * @param {boolean} linkage => if this is a list (! in the mapper) tells the data manager that 
+     * it needs to link attributes within the list to other attributes (@ in the mapper)
+     * @returns the desired attribute : any 
+     */
     get(attribute, keys, attributeName = null, linkage = true){
         //console.log(attribute);
         if (this.mapper[attribute] == null){
@@ -123,6 +134,14 @@ class DataManager{
         return current[attribute];
     }
 
+    /**
+     * Sets a new value of an attribute. NOTE: do not use this on a list
+     * @param {string} attribute => the attribute being set
+     * @param {*} newValue => the new value of the attribute
+     * @param {*[]} keys => the keys needed to access the attribute
+     * @param {string} attributeName => if its a custom attribute, the name of the attribute
+     * @returns the new value upon success : any
+     */
     set(attribute, newValue, keys, attributeName = null){
         var path = this.mapper[attribute].path;
         if (attribute[0] == '#'){
@@ -154,6 +173,13 @@ class DataManager{
         return current[attribute] = newValue;
     }
 
+    /**
+     * checks if a pathway exists within the database. 
+     * NOTE: this is not used to check if an attribute exist, just the path
+     * @param {string} path => the path to be checked
+     * @param {*[]} keys => the keys needed for the path 
+     * @returns true if the path exists, false otherwise
+     */
     checkPath(path, keys){
         var pathAry = path.split('->');
         var result = true;
@@ -182,6 +208,14 @@ class DataManager{
         return result;
     }
 
+    /**
+     * checks if a attribute exists within the database
+     * !!!TODO!!!: still needs testing
+     * @param {string} attribute => the attribute being tested
+     * @param {*[]} keys => the keys needed to access the attribute
+     * @param {string} attributeName => the name of the custom attribute
+     * @returns true if the attribute exist, false otherwise
+     */
     checkAttri(attribute, keys, attributeName = null){
         if (this.mapper[attribute] == null){
             throw Error(attribute + " is not a valid attribute");
@@ -191,8 +225,6 @@ class DataManager{
         if (attribute[0] == '#'){
             attribute = attributeName;
         }
-
-        
 
         var pathAry = path.split('->');
 
@@ -224,12 +256,24 @@ class DataManager{
         return false;
     }
 
-    // updater can take the form: x => x + 1, updater = x => x + 1, or updater = x => {returns x + 1}
+    /**
+     * Updates the value of a attribute (gets then sets)
+     * @param {string} attribute => the attribute name
+     * @param {*[]} keys => the keys needed to access the attribute
+     * @param {Function} updater => some lambda function used to update the value.
+     * updater can take the form: x => x + 1, updater = x => x + 1, or updater = x => {returns x + 1} 
+     * @param {string} attributeName => the name of the custom attribute if it is one. 
+     */
     update(attribute, keys, updater, attributeName=null){
         var result = this.get(attribute, keys, attributeName);
         this.set(attribute, updater(result), keys, attributeName);
     }
 
+    /**
+     * Converts each element of an array to its linked attributes
+     * @param {string[]} ary => the array being converted
+     * @returns the new array
+     */
     #getArray(ary){
         var newAry = JSON.parse(JSON.stringify(ary));
         for (let i = 0; i < newAry.length; i++){
@@ -237,6 +281,7 @@ class DataManager{
         }
         return newAry;
     }
+
 
     #inArray(ary, id){
         var result = false;
@@ -275,5 +320,3 @@ class DataManager{
 }
 
 module.exports = DataManager;
-
-//var dm = new DataManager("C:/Users/alex/Desktop/VSC/discordBots/discordProjectZero (2)/JSONFiles/test.json", "C:/Users/alex/Desktop/VSC/discordBots/discordProjectZero (2)/JSONFiles/mapper.json");

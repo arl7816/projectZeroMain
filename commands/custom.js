@@ -1,4 +1,5 @@
 fs = require("fs");
+const DataManager = require('./DataManager');
 
 module.exports = {//make it so it stores the command without the 0
   name: "custom",
@@ -6,6 +7,7 @@ module.exports = {//make it so it stores the command without the 0
 
   // remember a custom command
   remember(message, args){
+    var dm = new DataManager("JSONFiles/custom.json");
     content = message.content;
 
     // splits the contents of the commmand
@@ -28,10 +30,10 @@ module.exports = {//make it so it stores the command without the 0
     command = command[1];
     content = content[1];
 
-    let data = fs.readFileSync("JSONFiles/custom.json").toString();
-    try{data=JSON.parse(data);}catch{}
+    //let data = fs.readFileSync("JSONFiles/custom.json").toString();
+    //try{data=JSON.parse(data);}catch{}
 
-    if (data[message.author.id] == null){
+    /*if (data[message.author.id] == null){
       data[message.author.id] = {};
     } //now lets put differences aside and take me out of timeou, huh. Fine but u may only use the command once in bot tester for the day deal. now complete your dream young one
     if (data[message.author.id][command] == null){
@@ -40,10 +42,19 @@ module.exports = {//make it so it stores the command without the 0
     }else{
       message.channel.send("Command already exist").catch();
       return;
+    }*/
+
+    if (!dm.checkAttri("#customCommand", [message.author.id], command)){
+      dm.set("#customCommand", content, [message.author.id], command);
+      message.channel.send("Custom command saved.").catch();
+    }else{
+      message.channel.send("Custom command already exists.").catch();
+      return;
     }
 
-    data = JSON.stringify(data);
-    fs.writeFileSync("JSONFiles/custom.json", data);
+    //data = JSON.stringify(data);
+    //fs.writeFileSync("JSONFiles/custom.json", data);
+    dm.close();
   },
 
   replace(message, args){

@@ -27,19 +27,19 @@
 	},
 	"commands": {
 		"global": {
-			"totalCommandsUsed": 42,
+			"totalCommandsUsed": 52,
 			"command": {
 				"ping": {
-					"totalGlobalCommandUsed": 11
+					"totalGlobalCommandUsed": 13
 				},
 				"backdoor": {
 					"totalGlobalCommandUsed": 1
 				},
 				"commands": {
-					"totalGlobalCommandUsed": 1
+					"totalGlobalCommandUsed": 2
 				},
 				"simple": {
-					"totalGlobalCommandUsed": 1
+					"totalGlobalCommandUsed": 2
 				},
 				"bakery": {
 					"totalGlobalCommandUsed": 1
@@ -79,6 +79,9 @@
 				},
 				"zero": {
 					"totalGlobalCommandUsed": 3
+				},
+				"custom": {
+					"totalGlobalCommandUsed": 6
 				}
 			},
 			"!topCommandsUsed": [
@@ -217,15 +220,23 @@
 						"zero"
 					],
 					"attributeName": null
+				},
+				{
+					"id": "custom",
+					"ratingValue": "totalGlobalCommandUsed",
+					"keys": [
+						"custom"
+					],
+					"attributeName": null
 				}
 			],
 			"types": {
 				"type": {
 					"Simple": {
-						"totalGlobalTypesUsed": 26
+						"totalGlobalTypesUsed": 34
 					},
 					"Commands": {
-						"totalGlobalTypesUsed": 7
+						"totalGlobalTypesUsed": 9
 					},
 					"Math": {
 						"totalGlobalTypesUsed": 9
@@ -261,12 +272,12 @@
 		},
 		"personal": {
 			"241330853496619009": {
-				"totalPersonalCommandsUsed": 42,
+				"totalPersonalCommandsUsed": 52,
 				"command": {
-					"ping": 11,
+					"ping": 13,
 					"backdoor": 1,
-					"commands": 1,
-					"simple": 1,
+					"commands": 2,
+					"simple": 2,
 					"bakery": 1,
 					"statistics": 1,
 					"banking": 1,
@@ -279,7 +290,8 @@
 					"simplify": 3,
 					"hash": 2,
 					"feedback": 1,
-					"zero": 3
+					"zero": 3,
+					"custom": 6
 				},
 				"!topPersonalCommands": [
 					{
@@ -417,11 +429,19 @@
 							"241330853496619009"
 						],
 						"attributeName": "zero"
+					},
+					{
+						"id": "custom",
+						"ratingValue": "#totalPersonalCommand",
+						"keys": [
+							"241330853496619009"
+						],
+						"attributeName": "custom"
 					}
 				],
 				"type": {
-					"Simple": 26,
-					"Commands": 7,
+					"Simple": 34,
+					"Commands": 9,
 					"Math": 9
 				},
 				"!topPersonalTypes": [
@@ -450,6 +470,14 @@
 						"attributeName": "Math"
 					}
 				]
+			},
+			"custom": {
+				"2": {
+					"test": "hi"
+				},
+				"241330853496619009": {
+					"test": "hi"
+				}
 			}
 		}
 	}
