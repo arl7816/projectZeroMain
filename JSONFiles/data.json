@@ -4,13 +4,13 @@
 			"personal": {
 				"241330853496619009": {
 					"messages": {
-						"totalUserMessages": 171,
+						"totalUserMessages": 215,
 						"servers": {
 							"883502433416912896": {
-								"totalUserServerMessages": 107,
+								"totalUserServerMessages": 147,
 								"channels": {
 									"931598159644352573": {
-										"totalUserChannelMessages": 82
+										"totalUserChannelMessages": 122
 									},
 									"!topChannelBasedMessages": [
 										{
@@ -100,10 +100,10 @@
 								}
 							],
 							"797331626873847849": {
-								"totalUserServerMessages": 64,
+								"totalUserServerMessages": 68,
 								"channels": {
 									"900174032446554162": {
-										"totalUserChannelMessages": 64
+										"totalUserChannelMessages": 68
 									},
 									"!topChannelBasedMessages": [
 										{
@@ -219,10 +219,10 @@
 							"797330901838856209": 1
 						}
 					},
-					"userBits": 158,
-					"userXP": 1.25030824924375e+63,
-					"userLevel": 48,
-					"userXPneeded": 28147497671065600
+					"userBits": 202,
+					"userXP": 1.2527756922544284e+144,
+					"userLevel": 92,
+					"userXPneeded": 4.951760157141521e+29
 				},
 				"276731173865259009": {
 					"messages": {
@@ -574,13 +574,13 @@
 				},
 				"192397064930459648": {
 					"messages": {
-						"totalUserMessages": 97,
+						"totalUserMessages": 98,
 						"servers": {
 							"690338432421199892": {
-								"totalUserServerMessages": 60,
+								"totalUserServerMessages": 61,
 								"channels": {
 									"690348223352537098": {
-										"totalUserChannelMessages": 60
+										"totalUserChannelMessages": 61
 									},
 									"!topChannelBasedMessages": [
 										{
@@ -773,10 +773,10 @@
 							]
 						}
 					},
-					"userXP": 89,
+					"userXP": 90,
 					"userLevel": 0,
 					"userXPneeded": 100,
-					"userBits": 96
+					"userBits": 97
 				},
 				"375749341492805642": {
 					"userXP": 73,
@@ -1152,10 +1152,10 @@
 			"global": {
 				"servers": {
 					"883502433416912896": {
-						"serverXP": 820,
+						"serverXP": 1020,
 						"channels": {
 							"931598159644352573": {
-								"channelXP": 385,
+								"channelXP": 585,
 								"channelXPneeded": 100,
 								"channelLevel": 0
 							},
@@ -1243,10 +1243,10 @@
 						"serverLevel": 4
 					},
 					"690338432421199892": {
-						"serverXP": 1385,
+						"serverXP": 1390,
 						"channels": {
 							"690348223352537098": {
-								"channelXP": 1385,
+								"channelXP": 1390,
 								"channelXPneeded": 100,
 								"channelLevel": 0
 							},
@@ -1339,10 +1339,10 @@
 								}
 							]
 						},
-						"serverXP": 405,
+						"serverXP": 425,
 						"channels": {
 							"900174032446554162": {
-								"channelXP": 405,
+								"channelXP": 425,
 								"channelXPneeded": 100,
 								"channelLevel": 0
 							},
@@ -1424,11 +1424,11 @@
 				},
 				"bot": {
 					"bits": {
-						"botTotalBits": 512
+						"botTotalBits": 557
 					},
-					"botXP": 7420,
-					"botXPneeded": 12800,
-					"botLevel": 8
+					"botXP": 30830,
+					"botXPneeded": 51200,
+					"botLevel": 10
 				}
 			}
 		}

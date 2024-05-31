@@ -30,20 +30,6 @@ module.exports = {//make it so it stores the command without the 0
     command = command[1];
     content = content[1];
 
-    //let data = fs.readFileSync("JSONFiles/custom.json").toString();
-    //try{data=JSON.parse(data);}catch{}
-
-    /*if (data[message.author.id] == null){
-      data[message.author.id] = {};
-    } //now lets put differences aside and take me out of timeou, huh. Fine but u may only use the command once in bot tester for the day deal. now complete your dream young one
-    if (data[message.author.id][command] == null){
-      data[message.author.id][command] = content;
-      message.channel.send("Custom command saved").catch();
-    }else{
-      message.channel.send("Command already exist").catch();
-      return;
-    }*/
-
     if (!dm.checkAttri("#customCommand", [message.author.id], command)){
       dm.set("#customCommand", content, [message.author.id], command);
       message.channel.send("Custom command saved.").catch();
@@ -52,8 +38,6 @@ module.exports = {//make it so it stores the command without the 0
       return;
     }
 
-    //data = JSON.stringify(data);
-    //fs.writeFileSync("JSONFiles/custom.json", data);
     dm.close();
   },
 
@@ -79,7 +63,9 @@ module.exports = {//make it so it stores the command without the 0
     let data = fs.readFileSync("JSONFiles/custom.json").toString();
     try{data=JSON.parse(data);}catch{}
 
-    if (data[message.author.id] == null){
+    var dm = new DataManager("JSONFiles/custom.json");
+
+    /*if (data[message.author.id] == null){
       data[message.author.id] = {};
     }
 
@@ -89,10 +75,17 @@ module.exports = {//make it so it stores the command without the 0
     }else{
       message.channel.send("Command does not exist").catch();
       return;
+    }*/
+
+    if (dm.checkAttri("#customCommand", [message.author.id], command)){
+      dm.set("#customCommand", content,  [message.author.id], command);
+      message.channel.send("Command replaced!").catch();
+    }else{
+      message.channel.send("Command does not exists").catch();
+      return;
     }
 
-    data = JSON.stringify(data);
-    fs.writeFileSync("JSONFiles/custom.json", data);
+    dm.close();
   },
 
   // makes the bot forget a command
@@ -105,34 +98,28 @@ module.exports = {//make it so it stores the command without the 0
     }
     let command = content[1];
 
-    let data = fs.readFileSync("JSONFiles/custom.json").toString();
-    try{data=JSON.parse(data);}catch{}
+    var dm = new DataManager("JSONFiles/custom.json");
 
-    if (data[message.author.id] == null || data[message.author.id][command] == null){
+    if (!dm.checkAttri("#customCommand", [message.author.id], command)){
       message.channel.send("Command does not exist").catch();
       return;
     }
 
-    delete data[message.author.id][command];
+    dm.deleteAttri("#customCommand", [message.author.id], command);
+    dm.close();
+
     message.channel.send("Command was forgotten").catch();
-    data = JSON.stringify(data);
-    fs.writeFileSync("JSONFiles/custom.json", data);
   },
 
   // uses a custom command if it exist
-  custom(message, command){
-    //let command = message.content.split(" ")[0];
+  custom(message, command){ 
+    var dm = new DataManager("JSONFiles/custom.json")
 
-    let data = fs.readFileSync("JSONFiles/custom.json").toString();
-    try{data=JSON.parse(data);}catch{}   
-
-    if (data[message.author.id] == null){
-      data[message.author.id] = {};
+    if (dm.checkAttri("#customCommand", [message.author.id], command)){
+      message.channel.send(
+        dm.get("#customCommand", [message.author.id], command)
+      ).catch();
     }
-
-    if (data[message.author.id][command] != null){
-      message.channel.send(data[message.author.id][command]).catch();
-    } 
   },
 
   // goes through each of the command names and shows the user what commands they have
@@ -145,7 +132,7 @@ module.exports = {//make it so it stores the command without the 0
       return;
     }
 
-    let keys = Object.keys(data[message.author.id]);
+    let keys = Object.keys(data["commands"]["personal"]["custom"][message.author.id]);
 
     if (keys.length == 0){
       message.channel.send("You dont have any commands").catch();

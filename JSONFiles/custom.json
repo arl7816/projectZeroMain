@@ -27,19 +27,19 @@
 	},
 	"commands": {
 		"global": {
-			"totalCommandsUsed": 52,
+			"totalCommandsUsed": 86,
 			"command": {
 				"ping": {
-					"totalGlobalCommandUsed": 13
+					"totalGlobalCommandUsed": 23
 				},
 				"backdoor": {
-					"totalGlobalCommandUsed": 1
+					"totalGlobalCommandUsed": 2
 				},
 				"commands": {
-					"totalGlobalCommandUsed": 2
+					"totalGlobalCommandUsed": 3
 				},
 				"simple": {
-					"totalGlobalCommandUsed": 2
+					"totalGlobalCommandUsed": 3
 				},
 				"bakery": {
 					"totalGlobalCommandUsed": 1
@@ -60,28 +60,43 @@
 					"totalGlobalCommandUsed": 6
 				},
 				"invite": {
-					"totalGlobalCommandUsed": 1
+					"totalGlobalCommandUsed": 2
 				},
 				"flip": {
 					"totalGlobalCommandUsed": 2
 				},
 				"roll": {
-					"totalGlobalCommandUsed": 5
+					"totalGlobalCommandUsed": 6
 				},
 				"simplify": {
 					"totalGlobalCommandUsed": 3
 				},
 				"hash": {
-					"totalGlobalCommandUsed": 2
+					"totalGlobalCommandUsed": 3
 				},
 				"feedback": {
 					"totalGlobalCommandUsed": 1
 				},
 				"zero": {
-					"totalGlobalCommandUsed": 3
+					"totalGlobalCommandUsed": 4
 				},
 				"custom": {
+					"totalGlobalCommandUsed": 11
+				},
+				"showcase": {
+					"totalGlobalCommandUsed": 2
+				},
+				"replace": {
+					"totalGlobalCommandUsed": 2
+				},
+				"forget": {
 					"totalGlobalCommandUsed": 6
+				},
+				"hi": {
+					"totalGlobalCommandUsed": 1
+				},
+				"hello": {
+					"totalGlobalCommandUsed": 1
 				}
 			},
 			"!topCommandsUsed": [
@@ -228,18 +243,61 @@
 						"custom"
 					],
 					"attributeName": null
+				},
+				{
+					"id": "showcase",
+					"ratingValue": "totalGlobalCommandUsed",
+					"keys": [
+						"showcase"
+					],
+					"attributeName": null
+				},
+				{
+					"id": "replace",
+					"ratingValue": "totalGlobalCommandUsed",
+					"keys": [
+						"replace"
+					],
+					"attributeName": null
+				},
+				{
+					"id": "forget",
+					"ratingValue": "totalGlobalCommandUsed",
+					"keys": [
+						"forget"
+					],
+					"attributeName": null
+				},
+				{
+					"id": "hi",
+					"ratingValue": "totalGlobalCommandUsed",
+					"keys": [
+						"hi"
+					],
+					"attributeName": null
+				},
+				{
+					"id": "hello",
+					"ratingValue": "totalGlobalCommandUsed",
+					"keys": [
+						"hello"
+					],
+					"attributeName": null
 				}
 			],
 			"types": {
 				"type": {
 					"Simple": {
-						"totalGlobalTypesUsed": 34
+						"totalGlobalTypesUsed": 64
 					},
 					"Commands": {
-						"totalGlobalTypesUsed": 9
+						"totalGlobalTypesUsed": 11
 					},
 					"Math": {
 						"totalGlobalTypesUsed": 9
+					},
+					"custom": {
+						"totalGlobalTypesUsed": 2
 					}
 				}
 			},
@@ -267,31 +325,44 @@
 						"Math"
 					],
 					"attributeName": null
+				},
+				{
+					"id": "custom",
+					"ratingValue": "totalGlobalTypesUsed",
+					"keys": [
+						"custom"
+					],
+					"attributeName": null
 				}
 			]
 		},
 		"personal": {
 			"241330853496619009": {
-				"totalPersonalCommandsUsed": 52,
+				"totalPersonalCommandsUsed": 86,
 				"command": {
-					"ping": 13,
-					"backdoor": 1,
-					"commands": 2,
-					"simple": 2,
+					"ping": 23,
+					"backdoor": 2,
+					"commands": 3,
+					"simple": 3,
 					"bakery": 1,
 					"statistics": 1,
 					"banking": 1,
 					"economy": 1,
 					"openai": 1,
 					"math": 6,
-					"invite": 1,
+					"invite": 2,
 					"flip": 2,
-					"roll": 5,
+					"roll": 6,
 					"simplify": 3,
-					"hash": 2,
+					"hash": 3,
 					"feedback": 1,
-					"zero": 3,
-					"custom": 6
+					"zero": 4,
+					"custom": 11,
+					"showcase": 2,
+					"replace": 2,
+					"forget": 6,
+					"hi": 1,
+					"hello": 1
 				},
 				"!topPersonalCommands": [
 					{
@@ -437,12 +508,53 @@
 							"241330853496619009"
 						],
 						"attributeName": "custom"
+					},
+					{
+						"id": "showcase",
+						"ratingValue": "#totalPersonalCommand",
+						"keys": [
+							"241330853496619009"
+						],
+						"attributeName": "showcase"
+					},
+					{
+						"id": "replace",
+						"ratingValue": "#totalPersonalCommand",
+						"keys": [
+							"241330853496619009"
+						],
+						"attributeName": "replace"
+					},
+					{
+						"id": "forget",
+						"ratingValue": "#totalPersonalCommand",
+						"keys": [
+							"241330853496619009"
+						],
+						"attributeName": "forget"
+					},
+					{
+						"id": "hi",
+						"ratingValue": "#totalPersonalCommand",
+						"keys": [
+							"241330853496619009"
+						],
+						"attributeName": "hi"
+					},
+					{
+						"id": "hello",
+						"ratingValue": "#totalPersonalCommand",
+						"keys": [
+							"241330853496619009"
+						],
+						"attributeName": "hello"
 					}
 				],
 				"type": {
-					"Simple": 34,
-					"Commands": 9,
-					"Math": 9
+					"Simple": 64,
+					"Commands": 11,
+					"Math": 9,
+					"custom": 2
 				},
 				"!topPersonalTypes": [
 					{
@@ -468,15 +580,20 @@
 							"241330853496619009"
 						],
 						"attributeName": "Math"
+					},
+					{
+						"id": "custom",
+						"ratingValue": "#totalPersonalType",
+						"keys": [
+							"241330853496619009"
+						],
+						"attributeName": "custom"
 					}
 				]
 			},
 			"custom": {
-				"2": {
-					"test": "hi"
-				},
 				"241330853496619009": {
-					"test": "hi"
+					"hi": "this is a test"
 				}
 			}
 		}

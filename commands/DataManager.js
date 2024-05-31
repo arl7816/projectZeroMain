@@ -174,6 +174,48 @@ class DataManager{
     }
 
     /**
+     * Deletes a custom attribute from memory
+     * @param {string} attribute => the name of the custom attribute
+     * @param {*[]} keys => keys required to get access to the attribute 
+     * @param {string} attributeName => the custom name
+     */
+    deleteAttri(attribute, keys, attributeName){
+        if (this.mapper[attribute] == null){
+            throw Error(attribute + " is not a valid attribute");
+        }
+
+        var path = this.mapper[attribute].path;
+        var empty = this.mapper[attribute].empty;
+
+        var pathAry = path.split('->');
+
+        if (this.data[pathAry[1]] == null){
+            this.data[pathAry[1]] = {}
+        }
+        var current = this.data[pathAry[1]];
+        var keyIndex = 0;
+        for (var i = 2; i < pathAry.length-1; i++){
+            var name = pathAry[i];
+
+            if (name[0] == '*'){
+                if (keys[keyIndex] == null){throw Error("null id provided")}
+                name = keys[keyIndex];
+                keyIndex++;
+            }
+
+            if (current[name] == null){current[name] = {};}
+            current = current[name];
+        }
+
+        // // should have access to attribute now
+        // if (current[attribute] == null){
+        //     current[attribute] = empty;
+        // }
+
+        delete current[attributeName];
+    }
+
+    /**
      * checks if a pathway exists within the database. 
      * NOTE: this is not used to check if an attribute exist, just the path
      * @param {string} path => the path to be checked
@@ -253,7 +295,7 @@ class DataManager{
             return false;
         }
 
-        return false;
+        return true;
     }
 
     /**

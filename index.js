@@ -156,15 +156,19 @@ client.on('message', message => {
       client.commands.get('simple').zero(message, args);
       break;
     case 'custom':
+      // up to date
       client.commands.get('custom').remember(message, args);
       break;
     case 'replace':
+      // up to date
       client.commands.get('custom').replace(message, args);
       break;
     case 'forget':
+      // up to date
       client.commands.get('custom').forget(message, args);
       break;
     case 'showcase':
+      // up to date...sorta...in its own little way
       client.commands.get('custom').showcase(message, args);
       break;
     case 'stats':
